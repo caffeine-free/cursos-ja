@@ -10,18 +10,24 @@ CONFIG += c++11
 
 SOURCES += \
     src/classes/course_impl.cpp \
+    src/classes/user_impl.cpp \
     src/lib/model_impl.cpp \
-    views/addcourse.cpp
+    views/addcourse.cpp \
+    views/clientepage.cpp
 
 HEADERS += \
     src/classes/course.h \
     src/classes/course_impl.h \
+    src/classes/user.h \
+    src/classes/user_impl.h \
     src/lib/model.h \
     src/lib/model_impl.h \
-    views/addcourse.h
+    views/addcourse.h \
+    views/clientepage.h
 
 FORMS += \
-    views/addcourse.ui
+    views/addcourse.ui \
+    views/clientepage.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
