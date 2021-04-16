@@ -13,7 +13,7 @@ protected:
     string email;               /**< the user email. */
     string cpf;               /**< the user cpf. */
     string password;            /**< the user password. */
-    vector<bool> courses;     /**< the user courses. */
+    vector<Course*> courses;     /**< the user courses. */
     int permission;             /**< the user permission. */
 
 public:
@@ -33,7 +33,7 @@ public:
      * @brief Construct a new User Impl object
      *
      */
-    UserImpl(string, string, string, string, const vector<bool>&, int);
+    UserImpl(string, string, string, string, const vector<Course*>&, int);
 
     /**
      * @brief Destroy the User Impl object
@@ -98,13 +98,13 @@ public:
      *
      * @return vector<bool>& the user courses
      */
-    vector<bool>& getCourses();
+    vector<Course*>& getCourses();
 
     /**
      * @brief Set the Courses object
      *
      */
-    void setCourses(const vector<bool> &);
+    void setCourses(const vector<Course*> &);
 
     /**
      * @brief Get the Permission object
