@@ -3,9 +3,10 @@
 
 #include <string>
 #include <vector>
+#include <fstream>
+#include <sstream>
 
-using std::string;
-using std::vector;
+using namespace std;
 
 /**
  * @brief this class represents an user

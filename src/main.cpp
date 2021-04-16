@@ -1,10 +1,14 @@
+#include  "views/addcourse.h"
+
 #include <QApplication>
-#include <iostream>
 
-using namespace std;
+int main(int argc, char* argv[]) {
+    QApplication qapp(argc, argv);
 
-int main(int argc, char *argv[]) {
-    QApplication a(argc, argv);
+    Model* model = Model::createModel();
 
- cout << "TESTE" << endl;
+    addCourse* addcourse = new addCourse();
+    addcourse->setModel(model);
+
+    return addcourse->exec();
 }
