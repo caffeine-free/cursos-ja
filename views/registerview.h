@@ -2,7 +2,6 @@
 #define REGISTERVIEW_H
 
 #include <QDialog>
-#include <QtSql>
 #include <QMessageBox>
 #include "src/lib/register.h"
 

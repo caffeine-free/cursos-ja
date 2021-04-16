@@ -32,7 +32,7 @@ void registerview::on_btn_cancel_clicked()
 void registerview::on_btn_register_clicked()
 {
     Register* reg = Register::createRegister();
-    vector<Course*> v = {};
+    vector<Course*> v;
 
     string name=ui->txt_name->text().toStdString();
     string email=ui->txt_email->text().toStdString();

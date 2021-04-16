@@ -2,7 +2,6 @@
 #define LOGIN_ADMPAGE_H
 
 #include <QDialog>
-#include <QtSql>
 #include <QMessageBox>
 #include "admpage.h"
 

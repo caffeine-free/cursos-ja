@@ -1,4 +1,4 @@
-#include  "views/addcourse.h"
+#include  "views/add_course.h"
 #include  "views/login.h"
 
 #include <QApplication>

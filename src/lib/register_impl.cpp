@@ -1,5 +1,4 @@
 #include "register.impl.h"
-#include "./views/registerview.h"
 #include "ui_registerview.h"
 #include <QHBoxLayout>
 
@@ -20,6 +19,7 @@ Register* RegisterImpl::createRegister() {
 }
 
 bool RegisterImpl::create(
+    Model* model,
     string name,
     string email,
     string cpf,

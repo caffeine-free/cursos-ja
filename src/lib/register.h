@@ -2,13 +2,10 @@
 #define REGISTER_H
 
 #include "model.h"
-#include <QDialog>
-#include <QtSql>
 #include <QMessageBox>
 
+using namespace std;
 
-using std::vector;
-using std::string;
 
 /**
  * @brief this class represents a register

@@ -1,7 +1,6 @@
 #include "login.h"
 #include "ui_login.h"
 
-static QSqlDatabase bancoDeDados=QSqlDatabase::addDatabase("QSQLITE");
 
 login::login(QWidget *parent) :
     QDialog(parent),
@@ -9,13 +8,6 @@ login::login(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setWindowTitle("Login");
-
-    bancoDeDados.setDatabaseName("/home/claragomes/Documentos/ufop/database/teste.db");
-    if(!bancoDeDados.open()){
-        ui->label->setText("Não abriu");
-    }else{
-        ui->label->setText("abriu");
-    }
 }
 
 login::~login()
