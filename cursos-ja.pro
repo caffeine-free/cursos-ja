@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     src/classes/course_impl.cpp \
+    src/classes/user_impl.cpp \
     src/lib/model_impl.cpp \
     src/lib/register_impl.cpp \
     src/main.cpp \
@@ -20,6 +21,8 @@ SOURCES += \
 HEADERS += \
     src/classes/course.h \
     src/classes/course_impl.h \
+    src/classes/user.h \
+    src/classes/user_impl.h \
     src/lib/model.h \
     src/lib/model_impl.h \
     src/lib/register.h \
