@@ -13,6 +13,7 @@ SOURCES += \
     src/classes/user_impl.cpp \
     src/lib/model_impl.cpp \
     src/main.cpp \
+    test/unitTest/tst_testeCursosJa.cpp \
     views/addcourse.cpp
 
 HEADERS += \
