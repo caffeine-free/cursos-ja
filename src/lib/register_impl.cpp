@@ -20,12 +20,11 @@ Register* RegisterImpl::createRegister() {
 }
 
 bool RegisterImpl::create(
-    Model* model,
     string name,
     string email,
     string cpf,
     string password,
-    const vector<bool>& courses,
+    const vector<Course*>& courses,
     int permission
 )
  {
@@ -62,7 +61,7 @@ void RegisterImpl::update(
     string email,
     string cpf,
     string password,
-    const vector<bool>& courses,
+    const vector<Course*>& courses,
     int permission
 ) {
     user->setName(name);

@@ -32,6 +32,7 @@ void registerview::on_btn_cancel_clicked()
 void registerview::on_btn_register_clicked()
 {
     Register* reg = Register::createRegister();
+    vector<Course*> v = {};
 
     string name=ui->txt_name->text().toStdString();
     string email=ui->txt_email->text().toStdString();
@@ -66,7 +67,7 @@ void registerview::on_btn_register_clicked()
 
         return;
     }
-    vector<bool> v = {};
+
     reg->create(model, name, email, cpf, password,v, 0);
     ui->txt_name->clear();
     ui->txt_email->clear();

@@ -36,7 +36,7 @@ public:
      * @return false if it failed
      */
     virtual bool create(
-        Model*, string, string, string, string, const vector<bool>&, int
+        Model*, string, string, string, string, const vector<Course*>&, int
     ) = 0;
 
     /**
@@ -52,7 +52,7 @@ public:
      *
      */
     virtual void update(
-        Model*, User*, string, string, string, string, const vector<bool>&, int
+        Model*, User*, string, string, string, string, const vector<Course*>&, int
     ) = 0;
 
     /**

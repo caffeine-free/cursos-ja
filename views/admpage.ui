@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>718</width>
-    <height>380</height>
+    <width>714</width>
+    <height>389</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>-10</y>
+     <y>0</y>
      <width>721</width>
-     <height>391</height>
+     <height>381</height>
     </rect>
    </property>
    <property name="currentIndex">
@@ -81,9 +81,9 @@
     <widget class="QTableWidget" name="tableWidget">
      <property name="geometry">
       <rect>
-       <x>180</x>
+       <x>5</x>
        <y>100</y>
-       <width>256</width>
+       <width>431</width>
        <height>192</height>
       </rect>
      </property>
@@ -188,7 +188,7 @@
       <string>Sair</string>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>0</x>

@@ -57,6 +57,39 @@ void admpage::setModel(Model *value)
     model = value;
 }
 
+void admpage::setTableData(){
+    ui->tableWidget->clear();
+    ui->tableWidget->setColumnCount(4);
+    ui->tableWidget->setRowCount((int)model->getUserList().size());
+    ui->tableWidget->verticalHeader()->hide();
+    ui->tableWidget->horizontalHeader()->hide();
+    ui->tableWidget->setShowGrid(false);
+    ui->tableWidget->setColumnWidth(0, 230);
+    ui->tableWidget->setColumnWidth(1, 250);
+    ui->tableWidget->setColumnWidth(3, 150);
+
+    int count = 0;
+    ui->tableWidget->setSortingEnabled(false);
+    for(auto it : this->model->getUserList()){
+        QString name = QString::fromStdString(it->getName());
+        QTableWidgetItem *name_item = new QTableWidgetItem(name, Qt::DisplayRole);
+        name_item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
+
+
+
+
+
+        ui->tableWidget->setItem(count, 0, name_item);
+
+
+
+        count++;
+    }
+    ui->tableWidget->setSortingEnabled(true);
+
+}
+
+
 void admpage::on_btn_search_clicked()
 {
 
