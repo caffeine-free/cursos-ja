@@ -12,8 +12,8 @@ SOURCES += \
     src/classes/course_impl.cpp \
     src/classes/user_impl.cpp \
     src/lib/model_impl.cpp \
-    views/addcourse.cpp \
-    views/clientepage.cpp
+    src/main.cpp \
+    views/addcourse.cpp
 
 HEADERS += \
     src/classes/course.h \
@@ -22,12 +22,10 @@ HEADERS += \
     src/classes/user_impl.h \
     src/lib/model.h \
     src/lib/model_impl.h \
-    views/addcourse.h \
-    views/clientepage.h
+    views/addcourse.h
 
 FORMS += \
-    views/addcourse.ui \
-    views/clientepage.ui
+    views/addcourse.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

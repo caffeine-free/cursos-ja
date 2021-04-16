@@ -3,6 +3,18 @@
 
 #include "model.h"
 #include "../classes/course_impl.h"
+#include "../classes/user_impl.h"
+
+#include <fstream>
+#include <sstream>
+#include "model.h"
+#include "../classes/user_impl.h"
+
+using std::ofstream;
+using std::ifstream;
+using std::getline;
+using std::stringstream;
+using std::ios;
 
 using namespace std;
 
@@ -14,7 +26,8 @@ using namespace std;
 class ModelImpl : public Model {
 protected:
     vector<Course*> courses; /**< Model's course sets. */
-
+    vector<User*> user_list;    /**< The list with stored users. */
+    User* user;                 /**< The logged user. */
 public:
     /**
      * @brief Construct a new Model Impl object
@@ -74,6 +87,58 @@ public:
      * 
      */
     void add(Course*);
+
+    /**
+         * @brief Create a User object
+         *
+         * @return User* the user pointer
+         */
+        User* createUser(
+            string, string, string, string, const vector<bool>&, int
+        );
+
+        /**
+         * @brief Get the User List object
+         *
+         * @return vector<User*>& the user list
+         */
+        vector<User*>& getUserList();
+
+        /**
+         * @brief Set the User List object
+         *
+         */
+        void setUserList(const vector<User*> &);
+
+        /**
+         * @brief Get the User object
+         *
+         * @return User* the user pointer
+         */
+        User *getUser() const;
+
+        /**
+         * @brief Set the User object
+         *
+         * @param value the user pointer
+         */
+        void setUser(User *value);
+
+        /**
+         * @brief read a list of users from a .csv file
+         *
+         * @return true  if it was successful
+         * @return false if it failed
+         */
+        bool readUser(const string&);
+
+        /**
+         * @brief write a list of users in a .csv file
+         *
+         * @return true  if it was successful
+         * @return false if it failed
+         */
+        bool writeUser(const string&);
 };
 
 #endif // MODEL_IMPL_H
