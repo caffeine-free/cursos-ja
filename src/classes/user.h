@@ -1,11 +1,12 @@
 #ifndef USER_H
 #define USER_H
 
+#include "course.h"
+
 #include <string>
 #include <vector>
 
-using std::string;
-using std::vector;
+using namespace std;
 
 /**
  * @brief this class represents an user
@@ -20,7 +21,7 @@ public:
     virtual ~User() {};
 
     /**
-     * @brief Get the Name object
+     * @brief Get the Name fobject
      *
      * @return string the user name
      */
@@ -74,15 +75,15 @@ public:
     /**
      * @brief Get the Courses object
      *
-     * @return vector<bool>& the user courses
+     * @return vector<Course*>& the user courses
      */
-    virtual vector<bool>& getCourses() = 0;
+    virtual vector<Course*>& getCourses() = 0;
 
     /**
      * @brief Set the Courses object
      *
      */
-    virtual void setCourses(const vector<bool> &) = 0;
+    virtual void setCourses(const vector<Course*> &) = 0;
 
     /**
      * @brief Get the Permission object

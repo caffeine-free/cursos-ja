@@ -58,58 +58,71 @@ public:
      * @brief Adds a course to the model.
      *
      */
-    virtual void add(Course*);
+    virtual void add(Course*) = 0;
 
     /**
      * @brief Create a User object
-     *
-     * @return User* the user pointer
+     * 
+     * @return User* User set
      */
-    virtual User* createUser(
-            string, string, string, string, const vector<bool>&, int
-            ) = 0;
+    virtual User* createUser(string, string, string, string, const vector<Course*>&, int) = 0;
 
     /**
-         * @brief Get the User List object
-         *
-         * @return vector<User*>& the user list
-         */
-    virtual vector<User*>& getUserList() = 0;
+     * @brief Get the User object
+     * 
+     * @return User* User set
+     */
+    virtual User* getUser() const = 0;
 
     /**
-         * @brief Set the User List object
-         *
-         */
-    virtual void setUserList(const vector<User*> &) = 0;
-
-    /**
-         * @brief Get the User object
-         *
-         * @return User* the user pointer
-         */
-    virtual User *getUser() const = 0;
-
-    /**
-         * @brief Set the User object
-         *
-         */
+     * @brief Set the User object
+     * 
+     */
     virtual void setUser(User*) = 0;
 
     /**
-         * @brief read a list of users from a .csv file
-         *
-         * @return true  if it was successful
-         * @return false if it failed
-         */
-    virtual bool readUser(const string&) = 0;
+     * @brief Get the User List object
+     * 
+     * @return vector<User*>& Users set
+     */
+    virtual vector<User*>& getUserList() = 0;
 
     /**
-         * @brief write a list of users in a .csv file
-         *
-         * @return true  if it was successful
-         * @return false if it failed
-         */
+     * @brief Set the User List object
+     * 
+     */
+    virtual void setUserList(const vector<User*> &) = 0;
+
+    /**
+     * @brief Remove a Course object
+     * 
+     * @return true if it was successful
+     * @return false if it failed
+     */
+    virtual bool removeUser(User*) = 0;
+
+    /**
+     * @brief Update a Course object
+     * 
+     */
+    virtual void updateUser(User*, string, string, string) = 0;
+
+    /**
+     * @brief Write a file
+     * 
+     * @return true if it was successful
+     * @return false if it failed
+     */
     virtual bool writeUser(const string&) = 0;
+
+    /**
+     * @brief Read a file
+     * 
+     * @return true if it was successful
+     * @return false if it failed
+     */
+    virtual bool readUser(const string&) = 0;
+    
 };
 
 #endif // MODEL_H

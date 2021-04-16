@@ -15,7 +15,7 @@ UserImpl::UserImpl(
     string email,
     string cpf,
     string password,
-    const vector<bool>& courses,
+    const vector<Course*>& courses,
     int permission
 ) {
     this->name = name;
@@ -60,11 +60,11 @@ string UserImpl::getPassword() const {
     return password;
 }
 
-vector<bool>& UserImpl::getCourses() {
+vector<Course*>& UserImpl::getCourses() {
     return courses;
 }
 
-void UserImpl::setCourses(const vector<bool> &value) {
+void UserImpl::setCourses(const vector<Course*> &value) {
     courses = value;
 }
 
@@ -95,6 +95,6 @@ bool UserImpl::operator==(User& rhs) {
         && this->email == rhs.getEmail()
         && this->cpf == rhs.getCPF()
         && this->password == rhs.getPassword()
-        && this->courses == rhs.getCourses()
-        && this->permission == rhs.getPermission();
+        && this->permission == rhs.getPermission()
+        //&& this->courses == rhs.getCourses();
 }
