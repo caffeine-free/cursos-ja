@@ -11,19 +11,31 @@ CONFIG += c++11
 SOURCES += \
     src/classes/course_impl.cpp \
     src/lib/model_impl.cpp \
-    views/addcourse.cpp
+    src/lib/register_impl.cpp \
+    src/main.cpp \
+    views/addcourse.cpp \
+    views/login.cpp \
+    views/registerview.cpp
 
 HEADERS += \
     src/classes/course.h \
     src/classes/course_impl.h \
     src/lib/model.h \
     src/lib/model_impl.h \
-    views/addcourse.h
+    src/lib/register.h \
+    src/lib/register.impl.h \
+    views/addcourse.h \
+    views/login.h \
+    views/registerview.h
 
 FORMS += \
-    views/addcourse.ui
+    views/addcourse.ui \
+    views/login.ui \
+    views/registerview.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES +=

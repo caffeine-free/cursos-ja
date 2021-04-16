@@ -1,0 +1,4 @@
+#ifndef REGISTER_IMPL_H
+#define REGISTER_IMPL_H
+
+#endif // REGISTER_IMPL_H
