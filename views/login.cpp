@@ -72,15 +72,17 @@ void login::on_pushButton_clicked()
 }
 
 void login::on_btn_newClient_clicked()
-{
-    this->close();
-    reg->exec();
+{   /*reg->exec();
+    this->close();*/
+    registerview registerview;
+    registerview.exec();
+
 }
 
 void login::on_btn_admPage_clicked()
 {
-    /*login_adm_page login_adm_page;
-    login_adm_page.exec();
-    Fazer igual ao cadastro do cliente*/
+    login_admpage login_admpage;
+    login_admpage.exec();
+
 }
 

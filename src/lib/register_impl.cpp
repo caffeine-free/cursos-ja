@@ -1,4 +1,8 @@
 #include "register.impl.h"
+#include "./views/registerview.h"
+#include "ui_registerview.h"
+#include <QHBoxLayout>
+
 
 #include <iostream>
 using namespace std;
@@ -29,8 +33,7 @@ bool RegisterImpl::create(
         name, email, cpf, password, courses, permission
     );
     model->setUser(user);
-    //Criar cliente no banco
-    //return model->writeUser("../series-feelings/database/user-list.csv");
+    return model->writeUser("../cursos-ja/database/user-list.csv");
 }
 
 bool RegisterImpl::remove(Model* model, User* user) {

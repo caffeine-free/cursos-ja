@@ -158,6 +158,5 @@ bool ModelImpl::writeUser(const string& file){
     }
 
     output_file.close();
-
     return output_file.good();
 }

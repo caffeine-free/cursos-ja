@@ -18,6 +18,9 @@ public:
     explicit login_admpage(QWidget *parent = nullptr);
     ~login_admpage();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::login_admpage *ui;
 };

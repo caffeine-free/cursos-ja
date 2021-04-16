@@ -2,6 +2,9 @@
 #define REGISTER_H
 
 #include "model.h"
+#include <QDialog>
+#include <QtSql>
+#include <QMessageBox>
 
 
 using std::vector;

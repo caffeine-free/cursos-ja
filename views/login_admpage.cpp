@@ -12,3 +12,9 @@ login_admpage::~login_admpage()
 {
     delete ui;
 }
+
+void login_admpage::on_pushButton_clicked()
+{
+    admpage admpage;
+    admpage.exec();
+}
