@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -15,7 +15,10 @@ SOURCES += \
     src/lib/register_impl.cpp \
     src/main.cpp \
     views/addcourse.cpp \
+    views/admpage.cpp \
+    views/editclient.cpp \
     views/login.cpp \
+    views/login_admpage.cpp \
     views/registerview.cpp
 
 HEADERS += \
@@ -28,12 +31,18 @@ HEADERS += \
     src/lib/register.h \
     src/lib/register.impl.h \
     views/addcourse.h \
+    views/admpage.h \
+    views/editclient.h \
     views/login.h \
+    views/login_admpage.h \
     views/registerview.h
 
 FORMS += \
     views/addcourse.ui \
+    views/admpage.ui \
+    views/editclient.ui \
     views/login.ui \
+    views/login_admpage.ui \
     views/registerview.ui
 
 # Default rules for deployment.
