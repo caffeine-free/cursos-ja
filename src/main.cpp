@@ -14,4 +14,6 @@ int main(int argc, char* argv[]) {
     login login;
 
     return login.exec();
+    //return addcourse->exec();
+
 }
