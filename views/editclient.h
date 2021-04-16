@@ -15,6 +15,11 @@ public:
     explicit editclient(QWidget *parent = nullptr);
     ~editclient();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::editclient *ui;
 };

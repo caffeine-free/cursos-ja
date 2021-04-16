@@ -1,5 +1,5 @@
-
-#include  "views/addcourse.h"
+#include  "views/add_course.h"
+#include  "views/login.h"
 
 #include <QApplication>
 
@@ -8,9 +8,12 @@ int main(int argc, char* argv[]) {
 
     Model* model = Model::createModel();
 
-    addCourse* addcourse = new addCourse();
-    addcourse->setModel(model);
+   /* addCourse* addcourse = new addCourse();
+    addcourse->setModel(model);*/
 
-    return addcourse->exec();
+    login login;
+
+    return login.exec();
+    //return addcourse->exec();
 
 }

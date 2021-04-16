@@ -2,10 +2,10 @@
 #define REGISTER_H
 
 #include "model.h"
+#include <QMessageBox>
 
+using namespace std;
 
-using std::vector;
-using std::string;
 
 /**
  * @brief this class represents a register
@@ -33,7 +33,7 @@ public:
      * @return false if it failed
      */
     virtual bool create(
-        Model*, string, string, string, string, const vector<bool>&, int
+        Model*, string, string, string, string, const vector<Course*>&, int
     ) = 0;
 
     /**
@@ -49,7 +49,7 @@ public:
      *
      */
     virtual void update(
-        Model*, User*, string, string, string, string, const vector<bool>&, int
+        Model*, User*, string, string, string, string, const vector<Course*>&, int
     ) = 0;
 
     /**
