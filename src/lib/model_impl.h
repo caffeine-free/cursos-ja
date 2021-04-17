@@ -127,6 +127,10 @@ public:
      */
     void updateUser(User*, string, string, string);
 
+    bool writeCourse(const string&);
+
+    bool readCourse(const string&);
+
     /**
      * @brief Write a file
      * 

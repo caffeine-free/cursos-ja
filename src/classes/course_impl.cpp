@@ -42,4 +42,22 @@ string CourseImpl::getPrice() const {
 
 void CourseImpl::setPrice(const string& price) {
     this->price = price;
-};
+}
+
+Course& CourseImpl::operator=(Course& course) {
+    if(this == &course)
+            return *this;
+
+    this->name = course.getName();
+    this->description = course.getDescription();
+    this->price = course.getPrice();
+
+    return *this;
+}
+
+bool CourseImpl::operator==(Course& course) {
+    return this->name == course.getName()
+        && this->description == course.getDescription()
+        && this->price == course.getPrice();
+}
+

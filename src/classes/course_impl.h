@@ -77,6 +77,10 @@ public:
      *
      */
     void setPrice(const string&);
+
+    Course& operator=(Course&);
+
+    bool operator==(Course&);
 };
 
 #endif // COURSE_IMPL_H

@@ -58,6 +58,10 @@ public:
      *
      */
     virtual void setPrice(const string&) = 0;
+
+    virtual Course& operator=(Course&) = 0;
+
+    virtual bool operator==(Course&) = 0;
 };
 
 #endif // COURSE_H

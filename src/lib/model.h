@@ -107,6 +107,10 @@ public:
      */
     virtual void updateUser(User*, string, string, string) = 0;
 
+    virtual bool writeCourse(const string&) = 0;
+
+    virtual bool readCourse(const string&) = 0;
+
     /**
      * @brief Write a file
      * 
