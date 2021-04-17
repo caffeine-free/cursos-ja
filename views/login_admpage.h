@@ -2,7 +2,6 @@
 #define LOGIN_ADMPAGE_H
 
 #include <QDialog>
-#include <QtSql>
 #include <QMessageBox>
 #include "admpage.h"
 
@@ -17,6 +16,9 @@ class login_admpage : public QDialog
 public:
     explicit login_admpage(QWidget *parent = nullptr);
     ~login_admpage();
+
+private slots:
+    void on_pushButton_clicked();
 
 private:
     Ui::login_admpage *ui;

@@ -39,7 +39,7 @@ public:
      * @return false if it failed
      */
     bool create(
-        Model*, string, string, string, string, const vector<bool>&, int
+        Model*, string, string, string, string, const vector<Course*>&, int
     );
 
     /**
@@ -55,7 +55,7 @@ public:
      *
      */
     void update(
-        Model*, User*, string, string, string, string, const vector<bool>&, int
+        Model*, User*, string, string, string, string, const vector<Course*>&, int
     );
 
     /**

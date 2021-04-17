@@ -3,7 +3,6 @@
 
 #include <QDialog>
 #include <QMainWindow>
-#include <QtSql>
 #include <QDebug>
 #include <QFileInfo>
 #include "login_admpage.h"

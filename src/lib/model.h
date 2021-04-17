@@ -61,6 +61,12 @@ public:
     virtual void add(Course*) = 0;
 
     /**
+     * @brief Adds a user to the model.
+     *
+     */
+    virtual void add(User*) = 0;
+
+    /**
      * @brief Create a User object
      * 
      * @return User* User set
@@ -105,7 +111,11 @@ public:
      * @brief Update a Course object
      * 
      */
-    virtual void updateUser(User*, string, string, string) = 0;
+    virtual void updateUser(User*, string, string, string, string) = 0;
+
+    virtual bool writeCourse(const string&) = 0;
+
+    virtual bool readCourse(const string&) = 0;
 
     /**
      * @brief Write a file
