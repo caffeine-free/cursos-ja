@@ -47,6 +47,14 @@ public:
      */
     void setEditClient(editclient *value);
 
+    void setTableData();
+
+    void buy_button_pressed();
+
+    void load_client_courses();
+
+    void load_all_courses();
+
 private slots:
     void on_edit_profile_btn_clicked();
 

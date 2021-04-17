@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>608</width>
-    <height>349</height>
+    <width>596</width>
+    <height>328</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -73,7 +73,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>170</x>
@@ -141,7 +141,7 @@
     <attribute name="title">
      <string>Gestão de Cursos</string>
     </attribute>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>20</x>
