@@ -5,8 +5,16 @@
 #include "./src/classes/user_impl.h"
 #include "./src/classes/course_impl.h"
 
+/**
+ * @brief Tests class constructors.
+ *
+ */
 void unit_user_constructor();
 
+/**
+ * @brief Tests class destructors.
+ *
+ */
 void unit_user_destructor();
 
 /**

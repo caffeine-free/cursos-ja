@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -95,7 +95,7 @@
       <string>PROCURE POR NOVOS CURSOS!</string>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -121,13 +121,6 @@
       </item>
       <item>
        <widget class="QTableWidget" name="table_all_courses"/>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>COMPRAR CURSO SELECIONADO</string>
-        </property>
-       </widget>
       </item>
      </layout>
     </widget>
