@@ -23,11 +23,11 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
-   <widget class="QWidget" name="Vendedor">
+   <widget class="QWidget" name="newCourses">
     <attribute name="title">
-     <string>Tab 1</string>
+     <string>Novo curso</string>
     </attribute>
     <widget class="QLabel" name="label_5">
      <property name="geometry">
@@ -81,8 +81,8 @@
     <widget class="QTableWidget" name="tableWidget">
      <property name="geometry">
       <rect>
-       <x>5</x>
-       <y>100</y>
+       <x>200</x>
+       <y>120</y>
        <width>431</width>
        <height>192</height>
       </rect>
@@ -135,7 +135,7 @@
        <x>0</x>
        <y>40</y>
        <width>711</width>
-       <height>29</height>
+       <height>30</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -193,8 +193,8 @@
       <rect>
        <x>0</x>
        <y>320</y>
-       <width>168</width>
-       <height>27</height>
+       <width>195</width>
+       <height>30</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">

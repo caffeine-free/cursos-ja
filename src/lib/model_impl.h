@@ -80,6 +80,8 @@ public:
      */
     void add(Course*);
 
+    void add(User* user);
+
     /**
      * @brief Create a User object
      * 
@@ -125,7 +127,7 @@ public:
      * @brief Update a Course object
      * 
      */
-    void updateUser(User*, string, string, string);
+    void updateUser(User*, string, string, string, string);
 
     bool writeCourse(const string&);
 

@@ -75,13 +75,7 @@ void admpage::setTableData(){
         QTableWidgetItem *name_item = new QTableWidgetItem(name, Qt::DisplayRole);
         name_item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
 
-
-
-
-
         ui->tableWidget->setItem(count, 0, name_item);
-
-
 
         count++;
     }

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>494</width>
-    <height>230</height>
+    <width>578</width>
+    <height>321</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
+     <x>40</x>
+     <y>30</y>
      <width>491</width>
      <height>226</height>
     </rect>
@@ -26,16 +26,22 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_7">
       <item>
-       <widget class="QLabel" name="label">
-        <property name="text">
-         <string>ID</string>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
         </property>
-       </widget>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
       </item>
       <item>
        <widget class="QLabel" name="txt_id_client">
         <property name="text">
-         <string>TextLabel</string>
+         <string>EDITAR INFORMAÇÕES PESSOAIS</string>
         </property>
        </widget>
       </item>
@@ -82,7 +88,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="txt_edit_email_client"/>
+           <widget class="QLineEdit" name="txt_email_edit_client"/>
           </item>
          </layout>
         </item>
@@ -96,23 +102,12 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="txt_edit_cpf_client"/>
+           <widget class="QLineEdit" name="txt_cpf_edit_client"/>
           </item>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_4">
-          <item>
-           <widget class="QLabel" name="label_6">
-            <property name="text">
-             <string>Sector</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="txt_edit_client"/>
-          </item>
-         </layout>
+         <layout class="QHBoxLayout" name="horizontalLayout_4"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -124,7 +119,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="txt_edit_password_client"/>
+           <widget class="QLineEdit" name="txt_password_edit_client"/>
           </item>
          </layout>
         </item>
@@ -133,14 +128,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_6">
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="cancel_btn_edit_client">
           <property name="text">
            <string>Cancelar</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_2">
+         <widget class="QPushButton" name="update_btn">
           <property name="text">
            <string>Gravar</string>
           </property>
@@ -151,6 +146,32 @@
      </layout>
     </item>
    </layout>
+  </widget>
+  <widget class="QPushButton" name="remove_profile_btn">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>280</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Remover perfil</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_teste">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>290</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
   </widget>
  </widget>
  <resources/>

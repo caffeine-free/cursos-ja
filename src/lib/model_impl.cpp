@@ -58,6 +58,10 @@ void ModelImpl::add(Course* course) {
     this->courses.push_back(course);
 }
 
+void ModelImpl::add(User* user) {
+    this->users.push_back(user);
+}
+
 User* ModelImpl::createUser(string name, string email, string cpf, string password, const vector<Course*>& courses, int permission) {
     return new UserImpl(name, email, cpf, password, courses, permission);
 }
@@ -79,10 +83,11 @@ bool ModelImpl::removeUser(User* user) {
     return false;
 }
 
-void ModelImpl::updateUser(User* user, string name, string email, string cpf) {
+void ModelImpl::updateUser(User* user, string name, string email, string cpf, string password) {
     user->setName(name);
     user->setEmail(email);
     user->setCPF(cpf);
+    user->setPassword(password);
 }
 
 User *ModelImpl::getUser() const {
