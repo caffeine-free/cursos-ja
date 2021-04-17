@@ -8,6 +8,7 @@ UserImpl::UserImpl(User* user) {
     this->cpf = user->getCPF();
     this->password = user->getPassword();
     this->courses = user->getCourses();
+    this->permission = user->getPermission();
 }
 
 UserImpl::UserImpl(

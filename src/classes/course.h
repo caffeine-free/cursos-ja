@@ -59,9 +59,12 @@ public:
      */
     virtual void setPrice(const string&) = 0;
 
+    /**
+     * @brief assignment operator
+     *
+     * @return Course& Course reference
+     */
     virtual Course& operator=(Course&) = 0;
-
-    virtual bool operator==(Course&) = 0;
 };
 
 #endif // COURSE_H

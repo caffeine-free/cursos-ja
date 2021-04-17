@@ -78,9 +78,12 @@ public:
      */
     void setPrice(const string&);
 
+    /**
+     * @brief assignment operator
+     *
+     * @return Course& Course reference
+     */
     Course& operator=(Course&);
-
-    bool operator==(Course&);
 };
 
 #endif // COURSE_IMPL_H

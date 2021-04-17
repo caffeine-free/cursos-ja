@@ -55,9 +55,3 @@ Course& CourseImpl::operator=(Course& course) {
     return *this;
 }
 
-bool CourseImpl::operator==(Course& course) {
-    return this->name == course.getName()
-        && this->description == course.getDescription()
-        && this->price == course.getPrice();
-}
-
