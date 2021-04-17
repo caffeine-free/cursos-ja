@@ -122,7 +122,7 @@ public:
     /**
      * @brief assignment operator
      *
-     * @return User&
+     * @return User& User reference
      */
     User& operator=(User&);
 

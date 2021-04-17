@@ -3,6 +3,8 @@
 #include "views/clientpage.h"
 #include "views/clientcontrol.h"
 
+#include <iostream>
+
 #include <QApplication>
 
 int main(int argc, char* argv[]) {
@@ -30,7 +32,4 @@ int main(int argc, char* argv[]) {
     cp->setModel(model);
     cp->setTableData();
     cp->exec();
-
-
-
 }
