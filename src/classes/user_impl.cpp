@@ -96,6 +96,5 @@ bool UserImpl::operator==(User& rhs) {
         && this->cpf == rhs.getCPF()
         && this->password == rhs.getPassword()
         && this->permission == rhs.getPermission();
-
-    // && this->courses == rhs.getCourses()
+        //&& this->courses == rhs.getCourses();
 }

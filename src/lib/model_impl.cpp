@@ -10,6 +10,11 @@ Model* Model::createModel() {
 
 Model* ModelImpl::createModel() {
     Model* model = new ModelImpl();
+
+    model->setUser(nullptr);
+
+    model->readUser("../cursos-ja/database/users.csv");
+
     return model;
 }
 
@@ -93,4 +98,83 @@ vector<User*>& ModelImpl::getUserList() {
 
 void ModelImpl::setUserList(const vector<User*> &value) {
     users = value;
+}
+
+bool ModelImpl::writeUser(const string& file){
+    ofstream output_file;
+
+    output_file.open(file, ios::out);
+
+    for (auto it : this->users) {
+        output_file << it->getName() << ";"
+                    << it->getEmail() << ";"
+                    << it->getCPF() << ";"
+                    << it->getPassword() << ";";
+        for (auto courses : it->getCourses()){
+            output_file << courses->getName() << ";"
+                        << courses->getDescription() << ";"
+                        << courses->getPrice() << ";";
+        }
+
+        output_file << it->getPermission() << "\n";
+    }
+
+    output_file.close();
+
+    return output_file.good();
+}
+
+bool ModelImpl::readUser(const string& file){
+    ifstream input_file;
+    vector<User*> users;
+    vector<string> courses_aux;
+    Course* course_1;
+    Course* course_2;
+
+    input_file.open(file, ios::in);
+
+    string name, email, cpf, password, course_name, course_description, course_price, permission;
+
+    while(getline(input_file, name, ';')){
+
+        getline(input_file, email, ';');
+
+        getline(input_file, cpf, ';');
+
+        getline(input_file, password, ';');
+
+        getline(input_file, course_name, ';');
+
+        getline(input_file, course_description, ';');
+
+        getline(input_file, course_price, ';');
+
+        course_1 = createCourse(course_name, course_description, course_price);
+
+        getline(input_file, course_name, ';');
+
+        getline(input_file, course_description, ';');
+
+        getline(input_file, course_price, ';');
+
+        course_2 = createCourse(course_name, course_description, course_price);
+
+        vector<Course*> courses;
+        courses.push_back(course_1);
+        courses.push_back(course_2);
+
+        getline(input_file, permission);
+
+        User* user = this->createUser(
+            name, email, cpf, password, courses, stoi(permission)
+        );
+
+        users.push_back(user);
+    }
+
+    this->setUserList(users);
+
+    input_file.close();
+
+    return input_file.good();
 }

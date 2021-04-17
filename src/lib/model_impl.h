@@ -80,19 +80,68 @@ public:
      */
     void add(Course*);
 
+    /**
+     * @brief Create a User object
+     * 
+     * @return User* User set
+     */
     User* createUser(string, string, string, string, const vector<Course*>&, int);
 
+    /**
+     * @brief Get the User object
+     * 
+     * @return User* User set
+     */
     User* getUser() const;
 
-    void setUser(User *value);
+    /**
+     * @brief Set the User object
+     * 
+     */
+    void setUser(User*);
 
+    /**
+     * @brief Get the User List object
+     * 
+     * @return vector<User*>& Users set
+     */
     vector<User*>& getUserList();
 
+    /**
+     * @brief Set the User List object
+     * 
+     */
     void setUserList(const vector<User*> &);
 
+    /**
+     * @brief Remove a Course object
+     * 
+     * @return true if it was successful
+     * @return false if it failed
+     */
     bool removeUser(User*);
 
+    /**
+     * @brief Update a Course object
+     * 
+     */
     void updateUser(User*, string, string, string);
+
+    /**
+     * @brief Write a file
+     * 
+     * @return true if it was successful
+     * @return false if it failed
+     */
+    bool writeUser(const string&);
+
+    /**
+     * @brief Read a file
+     * 
+     * @return true if it was successful
+     * @return false if it failed
+     */
+    bool readUser(const string&);
 
 };
 

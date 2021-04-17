@@ -1,3 +1,4 @@
+
 #include  "views/addcourse.h"
 
 #include <QApplication>
@@ -11,4 +12,5 @@ int main(int argc, char* argv[]) {
     addcourse->setModel(model);
 
     return addcourse->exec();
+
 }
