@@ -1,7 +1,7 @@
 #include "register.impl.h"
 #include "ui_registerview.h"
 #include <QHBoxLayout>
-
+#include <QDebug>
 
 #include <iostream>
 using namespace std;
@@ -32,7 +32,7 @@ bool RegisterImpl::create(
         name, email, cpf, password, courses, permission
     );
     model->setUser(user);
-    return model->writeUser("../cursos-ja/database/user-list.csv");
+    return model->writeUser("../cursos-ja/database/users.csv");
 }
 
 bool RegisterImpl::remove(Model* model, User* user) {
@@ -48,9 +48,7 @@ bool RegisterImpl::remove(Model* model, User* user) {
         );
         model->setUser(nullptr);
 
-
-        //deletar cliente no banco
-        //return model->writeUser("../series-feelings/database/user-list.csv");
+        return model->writeUser("../series-feelings/database/user-list.csv");
     }
 }
 
@@ -69,14 +67,17 @@ void RegisterImpl::update(
     user->setCPF(cpf);
     user->setPassword(password);
     user->setCourses(courses);
-    //Atualizar no banco
-    //model->writeUser("../series-feelings/database/user-list.csv");
+    model->writeUser("../series-feelings/database/users.csv");
 }
 
 bool RegisterImpl::search(Model* model, const string& name) const {
-    for(auto it : model->getUserList())
+    qDebug()<<"teste 1";
+    for(auto it : model->getUserList()){
+    qDebug()<<"teste 2";
         if(it->getName() == name)
+        qDebug()<<"teste 3";
             return true;
+    }
 
     return false;
 }

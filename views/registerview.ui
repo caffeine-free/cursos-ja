@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>257</width>
-    <height>292</height>
+    <height>273</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -80,16 +80,6 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="txt_sector">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="placeholderText">
-       <string>Área de Atuação</string>
-      </property>
-     </widget>
-    </item>
-    <item>
      <widget class="QLineEdit" name="txt_password">
       <property name="text">
        <string/>
@@ -121,7 +111,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>260</y>
+     <y>240</y>
      <width>251</width>
      <height>27</height>
     </rect>
