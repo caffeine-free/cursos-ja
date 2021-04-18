@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>872</width>
-    <height>531</height>
+    <width>909</width>
+    <height>577</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,19 +17,19 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>60</y>
-     <width>801</width>
-     <height>441</height>
+     <y>80</y>
+     <width>851</width>
+     <height>471</height>
     </rect>
    </property>
    <property name="currentIndex">
-    <number>3</number>
+    <number>0</number>
    </property>
-   <widget class="QWidget" name="tab_4">
+   <widget class="QWidget" name="tab">
     <attribute name="title">
      <string>Novo usuário</string>
     </attribute>
-    <widget class="QWidget" name="layoutWidget_3">
+    <widget class="QLabel" name="description_test">
      <property name="geometry">
       <rect>
        <x>280</x>
@@ -59,19 +59,23 @@
          </widget>
         </item>
         <item row="1" column="2">
-         <widget class="QLineEdit" name="txt_description_2"/>
+         <widget class="QLineEdit" name="txt_email_user"/>
         </item>
         <item row="4" column="2">
-         <widget class="QLineEdit" name="lineEdit_5"/>
+         <widget class="QLineEdit" name="txt_pass_user">
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
         </item>
         <item row="3" column="2">
-         <widget class="QLineEdit" name="lineEdit_4"/>
+         <widget class="QLineEdit" name="txt_permission"/>
         </item>
         <item row="0" column="2">
-         <widget class="QLineEdit" name="txt_Name_2"/>
+         <widget class="QLineEdit" name="txt_name_user"/>
         </item>
         <item row="2" column="2">
-         <widget class="QLineEdit" name="txt_price_2"/>
+         <widget class="QLineEdit" name="txt_cpf_user"/>
         </item>
         <item row="1" column="0">
          <widget class="QLabel" name="label_8">
@@ -88,7 +92,11 @@
          </widget>
         </item>
         <item row="5" column="2">
-         <widget class="QLineEdit" name="lineEdit_3"/>
+         <widget class="QLineEdit" name="txt_cpass_user">
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
         </item>
         <item row="4" column="0">
          <widget class="QLabel" name="label_9">
@@ -114,13 +122,26 @@
        </layout>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="add_user_btn">
         <property name="text">
-         <string>CADASTRAR CURSO</string>
+         <string>CADASTRAR USUÁRIO</string>
         </property>
        </widget>
       </item>
      </layout>
+    </widget>
+    <widget class="QPushButton" name="cancel_client_btn">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>310</y>
+       <width>269</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CANCELAR</string>
+     </property>
     </widget>
    </widget>
    <widget class="QWidget" name="tab_2">
@@ -164,10 +185,10 @@
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>130</y>
-       <width>221</width>
-       <height>151</height>
+       <x>300</x>
+       <y>150</y>
+       <width>261</width>
+       <height>185</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
@@ -222,6 +243,13 @@
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="cancel_course_btn">
+        <property name="text">
+         <string>CANCELAR</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </widget>
    </widget>
@@ -229,18 +257,34 @@
     <attribute name="title">
      <string>Gestão de Cursos</string>
     </attribute>
-    <widget class="QWidget" name="">
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>50</y>
+       <width>212</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 20px</string>
+     </property>
+     <property name="text">
+      <string>GESTÃO DE CURSOS</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>90</y>
-       <width>751</width>
-       <height>301</height>
+       <y>110</y>
+       <width>791</width>
+       <height>281</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_4">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QLineEdit" name="lineEdit"/>
         </item>
@@ -259,6 +303,32 @@
      </layout>
     </widget>
    </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>20</y>
+     <width>231</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="edit_adm_client_btn">
+      <property name="text">
+       <string>EDITAR PERFIL</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="exit_adm_btn">
+      <property name="text">
+       <string>SAIR DA CONTA</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

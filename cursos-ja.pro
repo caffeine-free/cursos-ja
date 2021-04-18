@@ -19,6 +19,7 @@ SOURCES += \
     views/clientcontrol.cpp \
     views/clientpage.cpp \
     views/editclient.cpp \
+    views/editcourse.cpp \
     views/login.cpp \
     views/login_admpage.cpp \
     views/registerview.cpp
@@ -37,6 +38,7 @@ HEADERS += \
     views/clientcontrol.h \
     views/clientpage.h \
     views/editclient.h \
+    views/editcourse.h \
     views/login.h \
     views/login_admpage.h \
     views/registerview.h
@@ -45,6 +47,7 @@ FORMS += \
     views/clientcontrol.ui \
     views/clientpage.ui \
     views/editclient.ui \
+    views/editcourse.ui \
     views/login.ui \
     views/login_admpage.ui \
     views/registerview.ui

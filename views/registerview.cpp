@@ -43,15 +43,23 @@ void registerview::on_btn_register_clicked()
     while (name == "" || email == "" || cpf == ""
         || password == "") {
 
-        QMessageBox::information(
+        QMessageBox::warning(
             this, tr("Cadastro"),
             tr("Preencha todos os campos!")
         );
         return;
     };
 
+    if( password != confirmPassword){
+        QMessageBox::warning(
+            this, tr("Cadastro"),
+            tr("Os campos de senha não coincidem!")
+        );
+        return;
+    }
+
     if (!reg->ValidateEmail(email)) {
-        QMessageBox::information(
+        QMessageBox::warning(
             this, tr("Cadastro"),
             tr("E-mail inválido!")
         );
@@ -60,7 +68,7 @@ void registerview::on_btn_register_clicked()
     }
 
     if(reg->search(model, email)){
-        QMessageBox::information(
+        QMessageBox::warning(
             this, tr("Cadastro"),
             tr("E-mail já cadastrado!")
         );

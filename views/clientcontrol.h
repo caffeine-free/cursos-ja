@@ -36,6 +36,20 @@ private slots:
 
     void on_tabWidget_currentChanged(int index);
 
+    void edit_course_button_pressed();
+
+    void remove_course_button_pressed();
+
+    void remove_user_pressed();
+
+    void edit_user_pressed();
+
+    void on_exit_adm_btn_clicked();
+
+    void on_edit_adm_client_btn_clicked();
+
+    void on_add_user_btn_clicked();
+
 private:
     Ui::ClientControl *ui;
     Model* model;

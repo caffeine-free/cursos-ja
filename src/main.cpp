@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
 
     Model* model = Model::createModel();
 
-    ClientControl* cc = new ClientControl();
+    /*ClientControl* cc = new ClientControl();
     cc->setModel(model);
 
     login_admpage* ladm = new login_admpage();
@@ -24,8 +24,17 @@ int main(int argc, char* argv[]) {
 
     return l->exec();
 
-    /*ClientControl* cp = new ClientControl();
+    */
+
+
+    ClientControl* cp = new ClientControl();
     cp->setModel(model);
     cp->setTableData();
-    return cp->exec();*/
+    return cp->exec();
+
+    /*
+    clientPage* cpage = new clientPage();
+    cpage->setModel(model);
+    cpage->exec(); */
+
 }

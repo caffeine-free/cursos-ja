@@ -1,6 +1,6 @@
 #include "login.h"
 #include "ui_login.h"
-
+#include "clientpage.h"
 
 login::login(QWidget *parent) :
     QDialog(parent),
@@ -70,6 +70,10 @@ void login::on_pushButton_clicked()
     }
 
     model->setUser(user);
+
+    clientPage* cp = new clientPage();
+    cp->setModel(model);
+    cp->exec();
     this->close();
 }
 
@@ -83,7 +87,9 @@ void login::on_btn_newClient_clicked()
 
 void login::on_btn_admPage_clicked()
 {
-    l_admpage->exec();
+    ClientControl* l_adm = new ClientControl();
+    l_adm->setModel(model);
+    l_adm->exec();
 }
 
 

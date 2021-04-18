@@ -2,6 +2,7 @@
 #include "ui_clientpage.h"
 
 #include "../src/classes/course_impl.h"
+#include "../src/classes/user_impl.h"
 #include "../views/login.h"
 
 clientPage::clientPage(QWidget *parent) :
@@ -11,7 +12,6 @@ clientPage::clientPage(QWidget *parent) :
     ui->setupUi(this);
     this->setWindowTitle("Página do Cliente");
 
-    ui->table_client_courses->setColumnCount(2);
 }
 
 clientPage::~clientPage()
@@ -64,7 +64,7 @@ void clientPage::load_all_courses(){
 
         QPushButton* comment = new QPushButton("Comprar");
         comment->setStyleSheet("QPushButton {font-weight:bold; width: 90%;}");
-        //connect(comment, SIGNAL(pressed()), this, SLOT(buy_button_pressed()));
+        connect(comment, SIGNAL(pressed()), this, SLOT(buy_button_pressed()));
 
         ui->table_all_courses->setItem(count, 0, name_item);
         ui->table_all_courses->setItem(count, 1, description_item);
@@ -73,13 +73,23 @@ void clientPage::load_all_courses(){
 
         count++;
     }
-    ui->table_all_courses->setSortingEnabled(true);
+    ui->table_all_courses->setSortingEnabled(false);
 }
 
 void clientPage::load_client_courses(){
+    vector<Course*> v;
+    Course* c1 = new CourseImpl("a", "b", "c");
+    v.push_back(c1);
+
+    Course* c2 = new CourseImpl("d", "d", "d");
+    v.push_back(c2);
+
+    User* test = new UserImpl("joao", "3", "3", "3", v, 0);
+    model->setUser(test);
+
     int count = 0;
     ui->table_client_courses->setSortingEnabled(false);
-    for(auto it : this->model->getCourses()){
+    for(auto it : this->model->getUser()->getCourses()){
         QString name = QString::fromStdString(it->getName());
         QTableWidgetItem *name_item = new QTableWidgetItem(name, Qt::DisplayRole);
         name_item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
@@ -94,7 +104,7 @@ void clientPage::load_client_courses(){
 
         count++;
     }
-    ui->table_client_courses->setSortingEnabled(true);
+    ui->table_client_courses->setSortingEnabled(false);
 }
 
 void clientPage::setTableData(){
@@ -108,7 +118,7 @@ void clientPage::setTableData(){
     ui->table_client_courses->setColumnWidth(1, 50);
 
     ui->table_client_courses->setSortingEnabled(false);
-    ui->table_client_courses->setSortingEnabled(true);
+    ui->table_client_courses->setSortingEnabled(false);
 
     load_client_courses();
 
@@ -124,7 +134,7 @@ void clientPage::setTableData(){
     ui->table_all_courses->setColumnWidth(3, 70);
 
     ui->table_all_courses->setSortingEnabled(false);
-    ui->table_all_courses->setSortingEnabled(true);
+    ui->table_all_courses->setSortingEnabled(false);
 
     load_all_courses();
 
@@ -140,6 +150,11 @@ void clientPage::buy_button_pressed(){
                    ui->table_all_courses->item(row, 2)->text().toStdString()
                 );
     model->getUser()->getCourses().push_back(c);
+
+    QMessageBox::information(
+        this, tr("Aviso"),
+        tr("Você comprou o curso!")
+    );
 }
 
 void clientPage::on_tabWidget_currentChanged(int index)
