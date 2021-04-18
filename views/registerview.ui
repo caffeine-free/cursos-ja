@@ -80,16 +80,6 @@
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="txt_sector">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="placeholderText">
-       <string>Área de Atuação</string>
-      </property>
-     </widget>
-    </item>
-    <item>
      <widget class="QLineEdit" name="txt_password">
       <property name="text">
        <string/>
