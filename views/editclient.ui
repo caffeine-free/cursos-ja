@@ -147,19 +147,6 @@
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="remove_profile_btn">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>280</y>
-     <width>111</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Remover perfil</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_teste">
    <property name="geometry">
     <rect>

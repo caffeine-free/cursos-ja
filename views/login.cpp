@@ -1,6 +1,6 @@
 #include "login.h"
 #include "ui_login.h"
-#include "editclient.h"
+#include "clientpage.h"
 
 login::login(QWidget *parent) :
     QDialog(parent),
@@ -35,33 +35,29 @@ void login::setModel(Model *value)
     model = value;
 }
 
+login_admpage *login::getLoginAdmPage() const
+{
+    return l_admpage;
+}
+
+void login::setLoginAdmPage(login_admpage *value)
+{
+    l_admpage = value;
+}
+
 void login::on_pushButton_clicked()
 {
     Register* r = Register::createRegister();
-    qDebug()<<"teste";
-     while (ui->username->text().toStdString() == "" || ui->password->text().toStdString() == "") {
-        QMessageBox::information(
-            this, tr("Cadastro"),
-            tr("Preencha todos os campos!")
-        );
-        return;
-    };
-
-
     if (!r->search(this->model, ui->username->text().toStdString())) {
-        qDebug()<<"teste 1";
         QMessageBox::information(
             this,
             tr("Login"),
             tr("Usuário não encontrado!")
-
         );
-    qDebug()<<"teste";
+
         return;
-    }else{
-        qDebug()<<"aquiiiiiiiiii";
     }
- qDebug()<<"teste 3";
+
     User* user = r->consult(this->model, ui->username->text().toStdString());
     if (user->getPassword() != ui->password->text().toStdString()) {
         QMessageBox::information(
@@ -74,23 +70,27 @@ void login::on_pushButton_clicked()
     }
 
     model->setUser(user);
-    editclient editclient; //Trocar para a página do cliente
-    editclient.exec();
+
+    clientPage* cp = new clientPage();
+    cp->setModel(model);
+    cp->exec();
     this->close();
 }
 
 void login::on_btn_newClient_clicked()
 {   /*reg->exec();
     this->close();*/
-    registerview registerview;
-    registerview.exec();
-
+    registerview* rv = new registerview();
+    rv->setModel(model);
+    rv->exec();
 }
 
 void login::on_btn_admPage_clicked()
 {
-    login_admpage login_admpage;
-    login_admpage.exec();
-
+    ClientControl* l_adm = new ClientControl();
+    l_adm->setModel(model);
+    l_adm->exec();
 }
+
+
 

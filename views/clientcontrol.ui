@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>602</width>
-    <height>353</height>
+    <width>909</width>
+    <height>577</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,104 +16,164 @@
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>10</y>
-     <width>601</width>
-     <height>341</height>
+     <x>20</x>
+     <y>80</y>
+     <width>851</width>
+     <height>471</height>
     </rect>
    </property>
    <property name="currentIndex">
     <number>0</number>
    </property>
-   <widget class="QWidget" name="tab_2">
+   <widget class="QWidget" name="tab">
     <attribute name="title">
-     <string>Gestão de Clientes</string>
+     <string>Novo usuário</string>
     </attribute>
-    <widget class="QTableWidget" name="tw_allclients">
+    <widget class="QLabel" name="description_test">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>280</x>
        <y>80</y>
-       <width>581</width>
-       <height>181</height>
+       <width>291</width>
+       <height>237</height>
       </rect>
      </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>50</y>
-       <width>491</width>
-       <height>25</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_clientsearch">
-     <property name="geometry">
-      <rect>
-       <x>510</x>
-       <y>50</y>
-       <width>80</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>FILTRAR</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_21">
-     <property name="geometry">
-      <rect>
-       <x>180</x>
-       <y>10</y>
-       <width>212</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font-size: 20px</string>
-     </property>
-     <property name="text">
-      <string>GESTÃO DE CLIENTES</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_clientlogout">
-     <property name="geometry">
-      <rect>
-       <x>500</x>
-       <y>270</y>
-       <width>89</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>SAIR</string>
-     </property>
-    </widget>
-    <widget class="QWidget" name="">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>270</y>
-       <width>175</width>
-       <height>27</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QPushButton" name="btn_clientedit">
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">font-size: 20px</string>
+        </property>
         <property name="text">
-         <string>ATUALIZAR</string>
+         <string>INSERIR NOVO USUÁRIO</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btn_clientdelete">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>CPF</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="txt_email_user"/>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLineEdit" name="txt_pass_user">
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="txt_permission"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="txt_name_user"/>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="txt_cpf_user"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Email</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Nome</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QLineEdit" name="txt_cpass_user">
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Senha</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Confirmar senha</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Permissão</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="add_user_btn">
         <property name="text">
-         <string>EXCLUIR</string>
+         <string>CADASTRAR USUÁRIO</string>
         </property>
        </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="cancel_client_btn">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>310</y>
+       <width>269</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CANCELAR</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Gestão de Usuários</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>751</width>
+       <height>351</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_2"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="text">
+           <string>FILTRAR</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="table_adm_user"/>
       </item>
      </layout>
     </widget>
@@ -122,52 +182,13 @@
     <attribute name="title">
      <string>Novo curso</string>
     </attribute>
-    <widget class="QLabel" name="description_test">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>80</y>
-       <width>55</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="name_test">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>110</y>
-       <width>55</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="price_test">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>140</y>
-       <width>55</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>50</y>
-       <width>221</width>
-       <height>151</height>
+       <x>300</x>
+       <y>150</y>
+       <width>261</width>
+       <height>185</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
@@ -222,6 +243,13 @@
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="cancel_course_btn">
+        <property name="text">
+         <string>CANCELAR</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </widget>
    </widget>
@@ -232,8 +260,8 @@
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
-       <x>180</x>
-       <y>10</y>
+       <x>290</x>
+       <y>50</y>
        <width>212</width>
        <height>23</height>
       </rect>
@@ -245,79 +273,62 @@
       <string>GESTÃO DE CURSOS</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>50</y>
-       <width>493</width>
-       <height>25</height>
+       <x>20</x>
+       <y>110</y>
+       <width>791</width>
+       <height>281</height>
       </rect>
      </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_4">
-     <property name="geometry">
-      <rect>
-       <x>510</x>
-       <y>50</y>
-       <width>80</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>FILTRAR</string>
-     </property>
-    </widget>
-    <widget class="QTableWidget" name="tableWidget">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>80</y>
-       <width>581</width>
-       <height>181</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_22">
-     <property name="geometry">
-      <rect>
-       <x>500</x>
-       <y>270</y>
-       <width>89</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>SAIR</string>
-     </property>
-    </widget>
-    <widget class="QWidget" name="">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>270</y>
-       <width>175</width>
-       <height>27</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="text">
-         <string>ATUALIZAR</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>FILTRAR</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_3">
-        <property name="text">
-         <string>EXCLUIR</string>
-        </property>
-       </widget>
+       <widget class="QTableWidget" name="table_adm_courses"/>
       </item>
      </layout>
     </widget>
    </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>20</y>
+     <width>231</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="edit_adm_client_btn">
+      <property name="text">
+       <string>EDITAR PERFIL</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="exit_adm_btn">
+      <property name="text">
+       <string>SAIR DA CONTA</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
