@@ -67,16 +67,22 @@ void registerview::on_btn_register_clicked()
         return;
     }
 
-    /*if(reg->search(model, email)){
+    if(reg->search(model, email)){
         QMessageBox::warning(
             this, tr("Cadastro"),
             tr("E-mail já cadastrado!")
         );
 
         return;
-    }*/
+    }
 
-    User* user = this->model->createUser(name, email, cpf, password,v, 0);
-    this->model->addUser(user);
+    reg->create(model, name, email, cpf, password,v, 0);
+    ui->txt_name->clear();
+    ui->txt_email->clear();
+    ui->txt_cpf->clear();
+    ui->txt_password->clear();
+    ui->txt_confirm_password->clear();
+    ui->txt_name->setFocus();
+    delete reg;
     this->close();
 }
