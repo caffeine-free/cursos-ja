@@ -25,6 +25,61 @@ void ClientControl::setModel(Model *value)
     model = value;
 }
 
+void ClientControl::load_all_clients(){
+    ui->tw_allclients->clear();
+    ui->tw_allclients->setColumnCount(4);
+    ui->tw_allclients->setRowCount((int)model->getUserList().size());
+    //ui->tw_allclients->verticalHeader()->hide();
+    //ui->tw_allclients->horizontalHeader()->hide();
+    ui->tw_allclients->setShowGrid(false);
+    ui->tw_allclients->setColumnWidth(0, 140);
+    ui->tw_allclients->setColumnWidth(1, 150);
+    ui->tw_allclients->setColumnWidth(2, 150);
+    ui->tw_allclients->setColumnWidth(3, 130);
+
+    //Cabeçalho
+    QStringList header={"Name","Email","CPF","Password"};
+    ui->tw_allclients->setHorizontalHeaderLabels(header);
+    ui->tw_allclients->setEditTriggers(QAbstractItemView::NoEditTriggers);//Componente não editável
+    ui->tw_allclients->setSelectionBehavior(QAbstractItemView::SelectRows);//Selecionar a linha inteira
+    ui->tw_allclients->verticalHeader()->setVisible(false);//Desabilitar números das linhas
+    ui->tw_allclients->setStyleSheet("QTableView {selection-background-color:blue}");//cor da seleção
+
+    int count = 0;
+    ui->tw_allclients->setSortingEnabled(false);
+    for(auto it : this->model->getUserList()){
+        QString name = QString::fromStdString(it->getName());
+        QTableWidgetItem *name_item = new QTableWidgetItem(name, Qt::DisplayRole);
+        name_item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
+
+        QString email = QString::fromStdString(it->getEmail());
+        QTableWidgetItem *email_item = new QTableWidgetItem(email, Qt::DisplayRole);
+        email_item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
+        email_item->setTextAlignment(Qt::AlignCenter);
+
+        QString cpf = QString::fromStdString(it->getCPF());
+        QTableWidgetItem *cpf_item = new QTableWidgetItem(cpf, Qt::DisplayRole);
+        cpf_item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
+        cpf_item->setTextAlignment(Qt::AlignCenter);
+
+        QString password = QString::fromStdString(it->getPassword());
+        QTableWidgetItem *password_item = new QTableWidgetItem(password, Qt::DisplayRole);
+        password_item->setFlags(Qt::ItemIsSelectable|Qt::ItemIsEnabled);
+        password_item->setTextAlignment(Qt::AlignCenter);
+
+
+
+        ui->tw_allclients->setItem(count, 0, name_item);
+        ui->tw_allclients->setItem(count, 1, email_item);
+        ui->tw_allclients->setItem(count, 2, cpf_item);
+        ui->tw_allclients->setItem(count, 3, password_item);
+
+        count++;
+    }
+    ui->tw_allclients->setSortingEnabled(true);
+}
+
+
 
 void ClientControl::setTableData(){
     ui->tableWidget->clear();
@@ -97,4 +152,25 @@ void ClientControl::on_tabWidget_currentChanged(int index)
          }
          ui->tableWidget->setSortingEnabled(true);
     }
+}
+
+
+void ClientControl::on_btn_clientedit_clicked()
+{
+
+}
+
+void ClientControl::on_btn_clientdelete_clicked()
+{
+
+}
+
+void ClientControl::on_btn_clientlogout_clicked()
+{
+
+}
+
+void ClientControl::on_btn_clientsearch_clicked()
+{
+
 }

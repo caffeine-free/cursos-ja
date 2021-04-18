@@ -27,10 +27,20 @@ public:
      *
      */
     void setTableData();
+    void load_all_clients();
 private slots:
     void on_pushButton_clicked();
 
     void on_tabWidget_currentChanged(int index);
+
+
+    void on_btn_clientedit_clicked();
+
+    void on_btn_clientdelete_clicked();
+
+    void on_btn_clientlogout_clicked();
+
+    void on_btn_clientsearch_clicked();
 
 private:
     Ui::ClientControl *ui;

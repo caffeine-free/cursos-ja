@@ -99,7 +99,7 @@ void ModelImpl::setUser(User *value) {
 }
 
 vector<User*>& ModelImpl::getUserList() {
-    return users;
+    return this->users;
 }
 
 void ModelImpl::setUserList(const vector<User*> &value) {

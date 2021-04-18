@@ -28,8 +28,14 @@ int main(int argc, char* argv[]) {
 
     return cp->exec();*/
 
-    clientPage* cp = new clientPage();
+   /* clientPage* cp = new clientPage();
     cp->setModel(model);
     cp->setTableData();
+    cp->exec();*/
+
+    ClientControl* cp = new ClientControl();
+    cp->setModel(model);
+    cp->setTableData();
+    cp->load_all_clients();
     cp->exec();
 }
