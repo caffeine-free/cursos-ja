@@ -64,7 +64,7 @@ void clientPage::load_all_courses(){
 
         QPushButton* comment = new QPushButton("Comprar");
         comment->setStyleSheet("QPushButton {font-weight:bold; width: 90%;}");
-        connect(comment, SIGNAL(pressed()), this, SLOT(buy_button_pressed()));
+        //connect(comment, SIGNAL(pressed()), this, SLOT(buy_button_pressed()));
 
         ui->table_all_courses->setItem(count, 0, name_item);
         ui->table_all_courses->setItem(count, 1, description_item);
@@ -161,6 +161,7 @@ void clientPage::on_logout_btn_clicked()
     this->close();
 
     login* l = new login();
+    l->setModel(model);
     l->exec();
 
 }

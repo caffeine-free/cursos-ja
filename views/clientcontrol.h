@@ -27,6 +27,10 @@ public:
      *
      */
     void setTableData();
+
+    void load_course_data();
+
+    void load_user_data();
 private slots:
     void on_pushButton_clicked();
 

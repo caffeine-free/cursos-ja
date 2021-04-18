@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>596</width>
-    <height>328</height>
+    <width>872</width>
+    <height>531</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,67 +17,155 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>30</y>
-     <width>561</width>
-     <height>281</height>
+     <y>60</y>
+     <width>801</width>
+     <height>441</height>
     </rect>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>3</number>
    </property>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>Novo usuário</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>80</y>
+       <width>291</width>
+       <height>237</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">font-size: 20px</string>
+        </property>
+        <property name="text">
+         <string>INSERIR NOVO USUÁRIO</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>CPF</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="txt_description_2"/>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLineEdit" name="lineEdit_5"/>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_4"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLineEdit" name="txt_Name_2"/>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="txt_price_2"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Email</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Nome</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="2">
+         <widget class="QLineEdit" name="lineEdit_3"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Senha</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Confirmar senha</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Permissão</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>CADASTRAR CURSO</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
    <widget class="QWidget" name="tab_2">
     <attribute name="title">
-     <string>Gestão de Clientes</string>
+     <string>Gestão de Usuários</string>
     </attribute>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>751</width>
+       <height>351</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_2"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="text">
+           <string>FILTRAR</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="table_adm_user"/>
+      </item>
+     </layout>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab">
     <attribute name="title">
      <string>Novo curso</string>
     </attribute>
-    <widget class="QLabel" name="description_test">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>80</y>
-       <width>55</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="name_test">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>110</y>
-       <width>55</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="price_test">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>140</y>
-       <width>55</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>170</x>
-       <y>50</y>
+       <x>280</x>
+       <y>130</y>
        <width>221</width>
        <height>151</height>
       </rect>
@@ -141,119 +229,32 @@
     <attribute name="title">
      <string>Gestão de Cursos</string>
     </attribute>
-    <widget class="QWidget" name="layoutWidget">
+    <widget class="QWidget" name="">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>40</y>
-       <width>521</width>
-       <height>181</height>
+       <y>90</y>
+       <width>751</width>
+       <height>301</height>
       </rect>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout_3">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_2">
-          <item>
-           <widget class="QLabel" name="label_5">
-            <property name="styleSheet">
-             <string notr="true">font-size: 20px</string>
-            </property>
-            <property name="text">
-             <string>GESTÃO DE CURSOS</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <layout class="QGridLayout" name="gridLayout_2">
-            <item row="2" column="0">
-             <widget class="QLabel" name="label_6">
-              <property name="text">
-               <string>Preço</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="0">
-             <widget class="QLabel" name="label_7">
-              <property name="text">
-               <string>Nome</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="2">
-             <widget class="QLineEdit" name="txt_description_2"/>
-            </item>
-            <item row="2" column="2">
-             <widget class="QLineEdit" name="txt_price_2"/>
-            </item>
-            <item row="0" column="2">
-             <widget class="QLineEdit" name="txt_Name_2"/>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="label_8">
-              <property name="text">
-               <string>Descrição</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
+         <widget class="QLineEdit" name="lineEdit"/>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <widget class="QPushButton" name="pushButton_2">
-            <property name="text">
-             <string>ATUALIZAR</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_3">
-            <property name="text">
-             <string>EXCLUIR</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>FILTRAR</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
       <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_4">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
-          <item>
-           <widget class="QLineEdit" name="lineEdit"/>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_4">
-            <property name="text">
-             <string>FILTRAR</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <widget class="QTableWidget" name="tableWidget"/>
-        </item>
-       </layout>
+       <widget class="QTableWidget" name="table_adm_courses"/>
       </item>
      </layout>
     </widget>

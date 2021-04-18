@@ -35,6 +35,16 @@ void login::setModel(Model *value)
     model = value;
 }
 
+login_admpage *login::getLoginAdmPage() const
+{
+    return l_admpage;
+}
+
+void login::setLoginAdmPage(login_admpage *value)
+{
+    l_admpage = value;
+}
+
 void login::on_pushButton_clicked()
 {
     Register* r = Register::createRegister();
@@ -66,15 +76,15 @@ void login::on_pushButton_clicked()
 void login::on_btn_newClient_clicked()
 {   /*reg->exec();
     this->close();*/
-    registerview registerview;
-    registerview.exec();
-
+    registerview* rv = new registerview();
+    rv->setModel(model);
+    rv->exec();
 }
 
 void login::on_btn_admPage_clicked()
 {
-    login_admpage login_admpage;
-    login_admpage.exec();
-
+    l_admpage->exec();
 }
+
+
 

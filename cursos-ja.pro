@@ -16,8 +16,6 @@ SOURCES += \
     src/main.cpp \
     tests/unit/unit_course.cpp \
     tests/unit/unit_user.cpp \
-    views/addcourse.cpp \
-    views/admpage.cpp \
     views/clientcontrol.cpp \
     views/clientpage.cpp \
     views/editclient.cpp \
@@ -36,8 +34,6 @@ HEADERS += \
     src/lib/register.impl.h \
     tests/unit/unit_course.h \
     tests/unit/unit_user.h \
-    views/addcourse.h \
-    views/admpage.h \
     views/clientcontrol.h \
     views/clientpage.h \
     views/editclient.h \
@@ -46,8 +42,6 @@ HEADERS += \
     views/registerview.h
 
 FORMS += \
-    views/addcourse.ui \
-    views/admpage.ui \
     views/clientcontrol.ui \
     views/clientpage.ui \
     views/editclient.ui \
