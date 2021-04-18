@@ -3,6 +3,8 @@
 #include "views/clientpage.h"
 #include "views/clientcontrol.h"
 
+#include <iostream>
+
 #include <QApplication>
 
 int main(int argc, char* argv[]) {
@@ -26,9 +28,8 @@ int main(int argc, char* argv[]) {
 
     return cp->exec();*/
 
-    ClientControl* cp = new ClientControl();
+    clientPage* cp = new clientPage();
+    cp->setModel(model);
+    cp->setTableData();
     cp->exec();
-
-
-
 }
