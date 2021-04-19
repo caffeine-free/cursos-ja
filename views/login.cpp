@@ -87,7 +87,7 @@ void login::on_btn_newClient_clicked()
 
 void login::on_btn_admPage_clicked()
 {
-    ClientControl* l_adm = new ClientControl();
+    login_admpage* l_adm = new login_admpage();
     l_adm->setModel(model);
     l_adm->exec();
 }
