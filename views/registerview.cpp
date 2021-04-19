@@ -1,5 +1,6 @@
 #include "registerview.h"
 #include "ui_registerview.h"
+#include "../cursos-ja/src/classes/user_impl.h"
 #include <QHBoxLayout>
 #include <vector>
 
@@ -31,7 +32,8 @@ void registerview::on_btn_cancel_clicked()
 
 void registerview::on_btn_register_clicked()
 {
-    Register* reg = Register::createRegister();
+    //Register* reg = Register::createRegister();
+
     vector<Course*> v;
 
     string name=ui->txt_name->text().toStdString();
@@ -39,6 +41,13 @@ void registerview::on_btn_register_clicked()
     string cpf=ui->txt_cpf->text().toStdString();
     string password=ui->txt_password->text().toStdString();
     string confirmPassword=ui->txt_confirm_password->text().toStdString();
+
+
+
+    /*ui->name_test->setText(ui->txt_Name->text());
+    ui->email_test->setText(ui->txt_description->text());
+    ui->cpf_test->setText(ui->txt_price->text());
+    ui->cpf_test->setText(ui->txt_price->text());*/
 
     while (name == "" || email == "" || cpf == ""
         || password == "") {
@@ -58,31 +67,34 @@ void registerview::on_btn_register_clicked()
         return;
     }
 
-    if (!reg->ValidateEmail(email)) {
+   /* if (!reg->ValidateEmail(email)) {
         QMessageBox::warning(
             this, tr("Cadastro"),
             tr("E-mail inválido!")
         );
 
         return;
-    }
-
-    if(reg->search(model, email)){
+    }*/
+    User* user = new UserImpl(name, email, cpf, password, v, 0);
+    this->model->addUser(user);
+    this->model->writeUser("../cursos-ja/database/users.csv");
+    /*if(reg->search(model, email)){
         QMessageBox::warning(
             this, tr("Cadastro"),
             tr("E-mail já cadastrado!")
         );
 
         return;
-    }
+    }*/
+    //User* user = this->model->createUser(name, email, cpf, password, v, 0);
 
-    reg->create(model, name, email, cpf, password,v, 0);
+    //reg->create(model, name, email, cpf, password,v, 0);
     ui->txt_name->clear();
     ui->txt_email->clear();
     ui->txt_cpf->clear();
     ui->txt_password->clear();
     ui->txt_confirm_password->clear();
     ui->txt_name->setFocus();
-    delete reg;
+   // delete reg;
     this->close();
 }

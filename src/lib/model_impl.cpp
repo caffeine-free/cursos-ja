@@ -58,7 +58,7 @@ void ModelImpl::add(Course* course) {
     this->courses.push_back(course);
 }
 
-void ModelImpl::add(User* user) {
+void ModelImpl::addUser(User* user) {
     this->users.push_back(user);
 }
 

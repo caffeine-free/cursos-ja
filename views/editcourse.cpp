@@ -41,17 +41,17 @@ void EditCourse::setModel(Model *value)
 
 void EditCourse::on_edit_btn_clicked()
 {
-    /*string name = ui->txt_name->text().toStdString();
+    string name = ui->txt_name->text().toStdString();
     string price = ui->txt_price->text().toStdString();
     string description = ui->txt_description->text().toStdString();
 
-    model->updateCourse(course, name, price, description);
+    model->updateCourse(course, name, description, price);
     model->writeCourse("../cursos-ja/database/courses.csv");
 
     QMessageBox::information(
         this, tr("Aviso"),
         tr("O curso foi alterado!")
-    );*/
+    );
 
 
     this->close();

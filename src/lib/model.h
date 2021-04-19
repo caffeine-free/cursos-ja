@@ -64,7 +64,7 @@ public:
      * @brief Adds a user to the model.
      *
      */
-    virtual void add(User*) = 0;
+    virtual void addUser(User*) = 0;
 
     /**
      * @brief Create a User object

@@ -62,6 +62,8 @@ private slots:
 
     void on_logout_btn_clicked();
 
+    void on_tabWidget_tabBarClicked(int index);
+
 private:
     Ui::clientPage *ui;
     Model* model;

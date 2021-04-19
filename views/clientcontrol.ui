@@ -19,7 +19,7 @@
      <x>20</x>
      <y>80</y>
      <width>851</width>
-     <height>471</height>
+     <height>461</height>
     </rect>
    </property>
    <property name="currentIndex">
@@ -148,34 +148,65 @@
     <attribute name="title">
      <string>Gestão de Usuários</string>
     </attribute>
-    <widget class="QWidget" name="layoutWidget_2">
+    <widget class="QPushButton" name="pushButton_5">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>751</width>
-       <height>351</height>
+       <x>738</x>
+       <y>110</y>
+       <width>81</width>
+       <height>25</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_5">
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_4">
-        <item>
-         <widget class="QLineEdit" name="lineEdit_2"/>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_5">
-          <property name="text">
-           <string>FILTRAR</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <widget class="QTableWidget" name="table_adm_user"/>
-      </item>
-     </layout>
+     <property name="text">
+      <string>FILTRAR</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>723</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="table_adm_user">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>811</width>
+       <height>231</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>50</y>
+       <width>212</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 20px</string>
+     </property>
+     <property name="text">
+      <string>GESTÃO DE USUÁRIOS</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>811</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2"/>
     </widget>
    </widget>
    <widget class="QWidget" name="tab">
@@ -304,31 +335,18 @@
     </widget>
    </widget>
   </widget>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QPushButton" name="exit_adm_btn">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>20</y>
-     <width>231</width>
-     <height>30</height>
+     <x>720</x>
+     <y>10</y>
+     <width>151</width>
+     <height>25</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_2">
-    <item>
-     <widget class="QPushButton" name="edit_adm_client_btn">
-      <property name="text">
-       <string>EDITAR PERFIL</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="exit_adm_btn">
-      <property name="text">
-       <string>SAIR DA CONTA</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <property name="text">
+    <string>SAIR DA CONTA</string>
+   </property>
   </widget>
  </widget>
  <resources/>

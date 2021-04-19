@@ -50,6 +50,8 @@ private slots:
 
     void on_add_user_btn_clicked();
 
+    void on_tabWidget_tabBarClicked(int index);
+
 private:
     Ui::ClientControl *ui;
     Model* model;
