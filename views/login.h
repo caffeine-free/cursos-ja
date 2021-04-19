@@ -48,6 +48,10 @@ public:
     Model *getModel() const;
     void setModel(Model *value);
 
+    login_admpage* getLoginAdmPage() const;
+
+    void setLoginAdmPage(login_admpage *value);
+
 
 private slots:
     /**
@@ -70,6 +74,8 @@ private:
     Ui::login *ui;
     Model* model;
     registerview* reg;
+
+    login_admpage* l_admpage;
 };
 
 #endif // LOGIN_H

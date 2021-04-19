@@ -1,4 +1,3 @@
-#include  "views/add_course.h"
 #include  "views/login.h"
 #include "views/clientpage.h"
 #include "views/clientcontrol.h"
@@ -12,30 +11,42 @@ int main(int argc, char* argv[]) {
 
     Model* model = Model::createModel();
 
-   /* addCourse* addcourse = new addCourse();
-    addcourse->setModel(model);*/
+    /*ClientControl* cc = new ClientControl();
+    cc->setModel(model);
 
+<<<<<<< HEAD
     login login;
 
     return login.exec();
     //return addcourse->exec();
+=======
+    login_admpage* ladm = new login_admpage();
+    ladm->setModel(model);
+    ladm->setClientControl(cc);
 
-    /*editclient* ec = new editclient();
+    login* l = new login();
+    l->setModel(model);
+    l->setLoginAdmPage(ladm);
+>>>>>>> 610edd4b87bc8ac898993eafd1ccac2273574c9c
 
-    clientPage* cp = new clientPage();
-    cp->setModel(model);
-    cp->setEditClient(ec);
+    return l->exec();
 
-    return cp->exec();*/
+    */
 
-   /* clientPage* cp = new clientPage();
-    cp->setModel(model);
-    cp->setTableData();
-    cp->exec();*/
 
     /*ClientControl* cp = new ClientControl();
     cp->setModel(model);
     cp->setTableData();
+<<<<<<< HEAD
     cp->load_all_clients();
     cp->exec();*/
+=======
+    return cp->exec();
+
+    /*
+    clientPage* cpage = new clientPage();
+    cpage->setModel(model);
+    cpage->exec(); */
+
+>>>>>>> 610edd4b87bc8ac898993eafd1ccac2273574c9c
 }

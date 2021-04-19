@@ -27,20 +27,28 @@ public:
      *
      */
     void setTableData();
-    void load_all_clients();
+
+    void load_course_data();
+
+    void load_user_data();
 private slots:
     void on_pushButton_clicked();
 
     void on_tabWidget_currentChanged(int index);
 
+    void edit_course_button_pressed();
 
-    void on_btn_clientedit_clicked();
+    void remove_course_button_pressed();
 
-    void on_btn_clientdelete_clicked();
+    void remove_user_pressed();
 
-    void on_btn_clientlogout_clicked();
+    void edit_user_pressed();
 
-    void on_btn_clientsearch_clicked();
+    void on_exit_adm_btn_clicked();
+
+    void on_edit_adm_client_btn_clicked();
+
+    void on_add_user_btn_clicked();
 
 private:
     Ui::ClientControl *ui;

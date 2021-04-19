@@ -4,6 +4,9 @@
 #include <QDialog>
 #include <QMessageBox>
 
+#include "../cursos-ja/src/lib/model.h"
+#include "../cursos-ja/src/classes/user.h"
+
 namespace Ui {
 class editclient;
 }
@@ -16,6 +19,14 @@ public:
     explicit editclient(QWidget *parent = nullptr);
     ~editclient();
 
+    User *getUser() const;
+
+    void setUser(User *value);
+
+    Model *getModel() const;
+
+    void setModel(Model *value);
+
 private slots:
     void on_cancel_btn_edit_client_clicked();
 
@@ -25,6 +36,8 @@ private slots:
 
 private:
     Ui::editclient *ui;
+    Model* model;
+    User* user;
 };
 
 #endif // EDITCLIENT_H

@@ -8,6 +8,26 @@ login_admpage::login_admpage(QWidget *parent) :
     ui->setupUi(this);
 }
 
+Model *login_admpage::getModel() const
+{
+    return model;
+}
+
+void login_admpage::setModel(Model *value)
+{
+    model = value;
+}
+
+ClientControl *login_admpage::getClientControl() const
+{
+    return admpage;
+}
+
+void login_admpage::setClientControl(ClientControl *value)
+{
+    admpage = value;
+}
+
 login_admpage::~login_admpage()
 {
     delete ui;
@@ -15,6 +35,5 @@ login_admpage::~login_admpage()
 
 void login_admpage::on_pushButton_clicked()
 {
-    admpage admpage;
-    admpage.exec();
+    admpage->exec();
 }
