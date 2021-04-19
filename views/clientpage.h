@@ -1,12 +1,9 @@
 #ifndef CLIENTPAGE_H
 #define CLIENTPAGE_H
 
-#include <QDialog>
-#include <QMessageBox>
 #include <vector>
 
 #include "editclient.h"
-#include "../cursos-ja/src/lib/model.h"
 
 /**
  * @brief this class represents the client page

@@ -2,6 +2,7 @@
 #define REGISTER_H
 
 #include "model.h"
+#include <QDialog>
 #include <QMessageBox>
 
 using namespace std;

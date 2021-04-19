@@ -1,5 +1,4 @@
 #include "functional_tests.h"
-#include <iostream>
 
 void functional_tests() {
     Model* model = Model::createModel();

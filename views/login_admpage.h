@@ -1,8 +1,6 @@
 #ifndef LOGIN_ADMPAGE_H
 #define LOGIN_ADMPAGE_H
 
-#include <QDialog>
-#include <QMessageBox>
 #include "clientcontrol.h"
 
 namespace Ui {

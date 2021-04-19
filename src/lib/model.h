@@ -1,7 +1,6 @@
 #ifndef MODEL_H
 #define MODEL_H
 
-#include "../classes/course.h"
 #include "../classes/user.h"
 
 /**

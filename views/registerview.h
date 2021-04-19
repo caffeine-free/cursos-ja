@@ -1,8 +1,6 @@
 #ifndef REGISTERVIEW_H
 #define REGISTERVIEW_H
 
-#include <QDialog>
-#include <QMessageBox>
 #include "src/lib/register.h"
 
 namespace Ui {

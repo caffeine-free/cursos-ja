@@ -1,6 +1,6 @@
 <map id="src/lib/register.impl.h" name="src/lib/register.impl.h">
-<area shape="rect" id="node2" href="$register_8h.html" title="register.h" alt="" coords="173,80,255,107"/>
-<area shape="rect" id="node3" href="$model_8h.html" title="model.h" alt="" coords="177,155,251,181"/>
-<area shape="rect" id="node4" href="$course_8h.html" title="../classes/course.h" alt="" coords="143,304,285,331"/>
-<area shape="rect" id="node9" href="$user_8h.html" title="../classes/user.h" alt="" coords="47,229,173,256"/>
+<area shape="rect" id="node2" href="$register_8h.html" title="register.h" alt="" coords="193,80,276,107"/>
+<area shape="rect" id="node3" href="$model_8h.html" title="model.h" alt="" coords="79,155,153,181"/>
+<area shape="rect" id="node4" href="$user_8h.html" title="../classes/user.h" alt="" coords="63,229,188,256"/>
+<area shape="rect" id="node5" href="$course_8h.html" title="course.h" alt="" coords="89,304,167,331"/>
 </map>
