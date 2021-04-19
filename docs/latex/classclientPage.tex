@@ -1,0 +1,297 @@
+\hypertarget{classclientPage}{}\section{client\+Page Class Reference}
+\label{classclientPage}\index{client\+Page@{client\+Page}}
+
+
+{\ttfamily \#include $<$clientpage.\+h$>$}
+
+
+
+Inheritance diagram for client\+Page\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classclientPage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for client\+Page\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classclientPage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classclientPage_ad0e43d381003fa34cf0151fc96896da3}{client\+Page} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new client Page object. \end{DoxyCompactList}\item 
+\hyperlink{classclientPage_af0c9562c16a80c54686adbc6f9637ebc}{$\sim$client\+Page} ()
+\begin{DoxyCompactList}\small\item\em Destroy the client Page object. \end{DoxyCompactList}\item 
+\hyperlink{classModel}{Model} $\ast$ \hyperlink{classclientPage_ab2876735aef44d0e72f7a57820148a27}{get\+Model} () const
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classModel}{Model} object. \end{DoxyCompactList}\item 
+void \hyperlink{classclientPage_ac40930f54077f9a7050e046b535ed45c}{set\+Model} (\hyperlink{classModel}{Model} $\ast$value)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classModel}{Model} object. \end{DoxyCompactList}\item 
+\hyperlink{classeditclient}{editclient} $\ast$ \hyperlink{classclientPage_aa61872884ea03691d0ac38db4d0d01cc}{get\+Edit\+Client} () const
+\begin{DoxyCompactList}\small\item\em Get the Login object. \end{DoxyCompactList}\item 
+void \hyperlink{classclientPage_ab16c72bc9c44d5e833206133d692c857}{set\+Edit\+Client} (\hyperlink{classeditclient}{editclient} $\ast$value)
+\begin{DoxyCompactList}\small\item\em Set the Login object. \end{DoxyCompactList}\item 
+void \hyperlink{classclientPage_aa430c4866eaf46e93492d4b950443689}{set\+Table\+Data} ()
+\begin{DoxyCompactList}\small\item\em Configure the Table\+Widget objects. \end{DoxyCompactList}\item 
+void \hyperlink{classclientPage_af7655cb029199e82bb1116969bc695e2}{load\+\_\+client\+\_\+courses} (const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&)
+\begin{DoxyCompactList}\small\item\em Load the Client\textquotesingle{}s courses. \end{DoxyCompactList}\item 
+void \hyperlink{classclientPage_ae5b2455576f3b750131cd21b5bb08430}{load\+\_\+all\+\_\+courses} (const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&)
+\begin{DoxyCompactList}\small\item\em Load all the \hyperlink{classModel}{Model}\textquotesingle{}s courses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classclientPage_a4e6a1fa2748827eeebac3ec6ec8ca2b9}{buy\+\_\+button\+\_\+pressed} ()
+\begin{DoxyCompactList}\small\item\em function to buy a new course \end{DoxyCompactList}\item 
+void \hyperlink{classclientPage_a71689a732ff9823c892105996593084b}{on\+\_\+edit\+\_\+profile\+\_\+btn\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em function to edit a user \end{DoxyCompactList}\item 
+void \hyperlink{classclientPage_a8485bac1ad742c7fe4bb4b14a504b506}{on\+\_\+tab\+Widget\+\_\+current\+Changed} (int index)
+\begin{DoxyCompactList}\small\item\em function to reload the table data when necesary \end{DoxyCompactList}\item 
+void \hyperlink{classclientPage_aaa4bc6d404c46a5d066fd566e902f5d9}{on\+\_\+logout\+\_\+btn\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em function to logout \end{DoxyCompactList}\item 
+void \hyperlink{classclientPage_a48bd84cbd67d5fad6a221b400c3e95e7}{on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked} (int index)
+\begin{DoxyCompactList}\small\item\em function do load the table data \end{DoxyCompactList}\item 
+void \hyperlink{classclientPage_ab2b6ddcf0b2a65919802226ac692cab9}{on\+\_\+btn\+\_\+search\+\_\+new\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em function to search courses \end{DoxyCompactList}\item 
+void \hyperlink{classclientPage_aba1c12dd43662d34b989a250af96c0aa}{on\+\_\+btn\+\_\+search\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em function to throw the search \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::client\+Page $\ast$ \hyperlink{classclientPage_a1c0ad34f6a6dc4eb84713d0c770ee27a}{ui}
+\item 
+\hyperlink{classModel}{Model} $\ast$ \hyperlink{classclientPage_a21b8604c7b8285a3ba9c37b133f89f02}{model}
+\item 
+\hyperlink{classeditclient}{editclient} $\ast$ \hyperlink{classclientPage_a70e3ec19ba9c4cbf70d9410173e97afd}{ec}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classclientPage_ad0e43d381003fa34cf0151fc96896da3}\label{classclientPage_ad0e43d381003fa34cf0151fc96896da3}} 
+\index{client\+Page@{client\+Page}!client\+Page@{client\+Page}}
+\index{client\+Page@{client\+Page}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{client\+Page()}{clientPage()}}
+{\footnotesize\ttfamily client\+Page\+::client\+Page (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new client Page object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclientPage_af0c9562c16a80c54686adbc6f9637ebc}\label{classclientPage_af0c9562c16a80c54686adbc6f9637ebc}} 
+\index{client\+Page@{client\+Page}!````~client\+Page@{$\sim$client\+Page}}
+\index{````~client\+Page@{$\sim$client\+Page}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{$\sim$client\+Page()}{~clientPage()}}
+{\footnotesize\ttfamily client\+Page\+::$\sim$client\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the client Page object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classclientPage_a4e6a1fa2748827eeebac3ec6ec8ca2b9}\label{classclientPage_a4e6a1fa2748827eeebac3ec6ec8ca2b9}} 
+\index{client\+Page@{client\+Page}!buy\+\_\+button\+\_\+pressed@{buy\+\_\+button\+\_\+pressed}}
+\index{buy\+\_\+button\+\_\+pressed@{buy\+\_\+button\+\_\+pressed}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{buy\+\_\+button\+\_\+pressed}{buy\_button\_pressed}}
+{\footnotesize\ttfamily void client\+Page\+::buy\+\_\+button\+\_\+pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to buy a new course 
+
+\mbox{\Hypertarget{classclientPage_aa61872884ea03691d0ac38db4d0d01cc}\label{classclientPage_aa61872884ea03691d0ac38db4d0d01cc}} 
+\index{client\+Page@{client\+Page}!get\+Edit\+Client@{get\+Edit\+Client}}
+\index{get\+Edit\+Client@{get\+Edit\+Client}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{get\+Edit\+Client()}{getEditClient()}}
+{\footnotesize\ttfamily \hyperlink{classeditclient}{editclient} $\ast$ client\+Page\+::get\+Edit\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Login object. 
+
+\begin{DoxyReturn}{Returns}
+Login$\ast$ the login pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classclientPage_ab2876735aef44d0e72f7a57820148a27}\label{classclientPage_ab2876735aef44d0e72f7a57820148a27}} 
+\index{client\+Page@{client\+Page}!get\+Model@{get\+Model}}
+\index{get\+Model@{get\+Model}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{get\+Model()}{getModel()}}
+{\footnotesize\ttfamily \hyperlink{classModel}{Model} $\ast$ client\+Page\+::get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \hyperlink{classModel}{Model} object. 
+
+\begin{DoxyReturn}{Returns}
+Model$\ast$ the model pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classclientPage_ae5b2455576f3b750131cd21b5bb08430}\label{classclientPage_ae5b2455576f3b750131cd21b5bb08430}} 
+\index{client\+Page@{client\+Page}!load\+\_\+all\+\_\+courses@{load\+\_\+all\+\_\+courses}}
+\index{load\+\_\+all\+\_\+courses@{load\+\_\+all\+\_\+courses}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{load\+\_\+all\+\_\+courses()}{load\_all\_courses()}}
+{\footnotesize\ttfamily void client\+Page\+::load\+\_\+all\+\_\+courses (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&}]{courses }\end{DoxyParamCaption})}
+
+
+
+Load all the \hyperlink{classModel}{Model}\textquotesingle{}s courses. 
+
+\mbox{\Hypertarget{classclientPage_af7655cb029199e82bb1116969bc695e2}\label{classclientPage_af7655cb029199e82bb1116969bc695e2}} 
+\index{client\+Page@{client\+Page}!load\+\_\+client\+\_\+courses@{load\+\_\+client\+\_\+courses}}
+\index{load\+\_\+client\+\_\+courses@{load\+\_\+client\+\_\+courses}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{load\+\_\+client\+\_\+courses()}{load\_client\_courses()}}
+{\footnotesize\ttfamily void client\+Page\+::load\+\_\+client\+\_\+courses (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&}]{courses }\end{DoxyParamCaption})}
+
+
+
+Load the Client\textquotesingle{}s courses. 
+
+\mbox{\Hypertarget{classclientPage_aba1c12dd43662d34b989a250af96c0aa}\label{classclientPage_aba1c12dd43662d34b989a250af96c0aa}} 
+\index{client\+Page@{client\+Page}!on\+\_\+btn\+\_\+search\+\_\+clicked@{on\+\_\+btn\+\_\+search\+\_\+clicked}}
+\index{on\+\_\+btn\+\_\+search\+\_\+clicked@{on\+\_\+btn\+\_\+search\+\_\+clicked}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{on\+\_\+btn\+\_\+search\+\_\+clicked}{on\_btn\_search\_clicked}}
+{\footnotesize\ttfamily void client\+Page\+::on\+\_\+btn\+\_\+search\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to throw the search 
+
+\mbox{\Hypertarget{classclientPage_ab2b6ddcf0b2a65919802226ac692cab9}\label{classclientPage_ab2b6ddcf0b2a65919802226ac692cab9}} 
+\index{client\+Page@{client\+Page}!on\+\_\+btn\+\_\+search\+\_\+new\+\_\+clicked@{on\+\_\+btn\+\_\+search\+\_\+new\+\_\+clicked}}
+\index{on\+\_\+btn\+\_\+search\+\_\+new\+\_\+clicked@{on\+\_\+btn\+\_\+search\+\_\+new\+\_\+clicked}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{on\+\_\+btn\+\_\+search\+\_\+new\+\_\+clicked}{on\_btn\_search\_new\_clicked}}
+{\footnotesize\ttfamily void client\+Page\+::on\+\_\+btn\+\_\+search\+\_\+new\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to search courses 
+
+\mbox{\Hypertarget{classclientPage_a71689a732ff9823c892105996593084b}\label{classclientPage_a71689a732ff9823c892105996593084b}} 
+\index{client\+Page@{client\+Page}!on\+\_\+edit\+\_\+profile\+\_\+btn\+\_\+clicked@{on\+\_\+edit\+\_\+profile\+\_\+btn\+\_\+clicked}}
+\index{on\+\_\+edit\+\_\+profile\+\_\+btn\+\_\+clicked@{on\+\_\+edit\+\_\+profile\+\_\+btn\+\_\+clicked}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{on\+\_\+edit\+\_\+profile\+\_\+btn\+\_\+clicked}{on\_edit\_profile\_btn\_clicked}}
+{\footnotesize\ttfamily void client\+Page\+::on\+\_\+edit\+\_\+profile\+\_\+btn\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to edit a user 
+
+\mbox{\Hypertarget{classclientPage_aaa4bc6d404c46a5d066fd566e902f5d9}\label{classclientPage_aaa4bc6d404c46a5d066fd566e902f5d9}} 
+\index{client\+Page@{client\+Page}!on\+\_\+logout\+\_\+btn\+\_\+clicked@{on\+\_\+logout\+\_\+btn\+\_\+clicked}}
+\index{on\+\_\+logout\+\_\+btn\+\_\+clicked@{on\+\_\+logout\+\_\+btn\+\_\+clicked}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{on\+\_\+logout\+\_\+btn\+\_\+clicked}{on\_logout\_btn\_clicked}}
+{\footnotesize\ttfamily void client\+Page\+::on\+\_\+logout\+\_\+btn\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to logout 
+
+\mbox{\Hypertarget{classclientPage_a8485bac1ad742c7fe4bb4b14a504b506}\label{classclientPage_a8485bac1ad742c7fe4bb4b14a504b506}} 
+\index{client\+Page@{client\+Page}!on\+\_\+tab\+Widget\+\_\+current\+Changed@{on\+\_\+tab\+Widget\+\_\+current\+Changed}}
+\index{on\+\_\+tab\+Widget\+\_\+current\+Changed@{on\+\_\+tab\+Widget\+\_\+current\+Changed}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{on\+\_\+tab\+Widget\+\_\+current\+Changed}{on\_tabWidget\_currentChanged}}
+{\footnotesize\ttfamily void client\+Page\+::on\+\_\+tab\+Widget\+\_\+current\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to reload the table data when necesary 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclientPage_a48bd84cbd67d5fad6a221b400c3e95e7}\label{classclientPage_a48bd84cbd67d5fad6a221b400c3e95e7}} 
+\index{client\+Page@{client\+Page}!on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked@{on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked}}
+\index{on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked@{on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked}{on\_tabWidget\_tabBarClicked}}
+{\footnotesize\ttfamily void client\+Page\+::on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function do load the table data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclientPage_ab16c72bc9c44d5e833206133d692c857}\label{classclientPage_ab16c72bc9c44d5e833206133d692c857}} 
+\index{client\+Page@{client\+Page}!set\+Edit\+Client@{set\+Edit\+Client}}
+\index{set\+Edit\+Client@{set\+Edit\+Client}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{set\+Edit\+Client()}{setEditClient()}}
+{\footnotesize\ttfamily void client\+Page\+::set\+Edit\+Client (\begin{DoxyParamCaption}\item[{\hyperlink{classeditclient}{editclient} $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the Login object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the login pointer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclientPage_ac40930f54077f9a7050e046b535ed45c}\label{classclientPage_ac40930f54077f9a7050e046b535ed45c}} 
+\index{client\+Page@{client\+Page}!set\+Model@{set\+Model}}
+\index{set\+Model@{set\+Model}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{set\+Model()}{setModel()}}
+{\footnotesize\ttfamily void client\+Page\+::set\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classModel}{Model} $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the \hyperlink{classModel}{Model} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the model pointer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclientPage_aa430c4866eaf46e93492d4b950443689}\label{classclientPage_aa430c4866eaf46e93492d4b950443689}} 
+\index{client\+Page@{client\+Page}!set\+Table\+Data@{set\+Table\+Data}}
+\index{set\+Table\+Data@{set\+Table\+Data}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{set\+Table\+Data()}{setTableData()}}
+{\footnotesize\ttfamily void client\+Page\+::set\+Table\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Configure the Table\+Widget objects. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classclientPage_a70e3ec19ba9c4cbf70d9410173e97afd}\label{classclientPage_a70e3ec19ba9c4cbf70d9410173e97afd}} 
+\index{client\+Page@{client\+Page}!ec@{ec}}
+\index{ec@{ec}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{ec}{ec}}
+{\footnotesize\ttfamily \hyperlink{classeditclient}{editclient}$\ast$ client\+Page\+::ec\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classclientPage_a21b8604c7b8285a3ba9c37b133f89f02}\label{classclientPage_a21b8604c7b8285a3ba9c37b133f89f02}} 
+\index{client\+Page@{client\+Page}!model@{model}}
+\index{model@{model}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \hyperlink{classModel}{Model}$\ast$ client\+Page\+::model\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classclientPage_a1c0ad34f6a6dc4eb84713d0c770ee27a}\label{classclientPage_a1c0ad34f6a6dc4eb84713d0c770ee27a}} 
+\index{client\+Page@{client\+Page}!ui@{ui}}
+\index{ui@{ui}!client\+Page@{client\+Page}}
+\subsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::client\+Page$\ast$ client\+Page\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+views/\hyperlink{clientpage_8h}{clientpage.\+h}\item 
+views/\hyperlink{clientpage_8cpp}{clientpage.\+cpp}\end{DoxyCompactItemize}

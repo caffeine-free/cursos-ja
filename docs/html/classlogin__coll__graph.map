@@ -1,0 +1,6 @@
+<map id="login" name="login">
+<area shape="rect" id="node3" href="$classlogin__admpage.html" title="this class represents the authentication performed by the administrator before being redirected to th..." alt="" coords="175,184,298,211"/>
+<area shape="rect" id="node5" href="$classClientControl.html" title="this class represents the Adm Page " alt="" coords="240,95,347,121"/>
+<area shape="rect" id="node6" href="$classregisterview.html" title="this class representer a RegisterView UI " alt="" coords="20,95,122,121"/>
+<area shape="rect" id="node4" href="$classModel.html" title="The Model class. " alt="" coords="108,5,170,32"/>
+</map>

@@ -43,20 +43,20 @@ public:
 
 private slots:
     /**
-     * @brief the button function
+     * @brief the button function to cancel the operation
      *
      */
     void on_btn_cancel_clicked();
 
     /**
-     * @brief the button function
+     * @brief the button function to register a user
      *
      */
     void on_btn_register_clicked();
 
 private:
-    Ui::registerview *ui;
-    Model* model;
+    Ui::registerview *ui; // The Register View's ui
+    Model* model; // The Register View's model
 };
 
 #endif // REGISTERVIEW_H

@@ -1,0 +1,8 @@
+<map id="views/clientcontrol.h" name="views/clientcontrol.h">
+<area shape="rect" id="node2" href="$clientcontrol_8cpp.html" title="views/clientcontrol.cpp" alt="" coords="5,229,177,256"/>
+<area shape="rect" id="node3" href="$login__admpage_8h.html" title="views/login_admpage.h" alt="" coords="177,80,353,107"/>
+<area shape="rect" id="node4" href="$login_8h.html" title="views/login.h" alt="" coords="211,155,319,181"/>
+<area shape="rect" id="node7" href="$login__admpage_8cpp.html" title="views/login_admpage.cpp" alt="" coords="343,155,533,181"/>
+<area shape="rect" id="node5" href="$clientpage_8cpp.html" title="views/clientpage.cpp" alt="" coords="201,229,360,256"/>
+<area shape="rect" id="node6" href="$login_8cpp.html" title="views/login.cpp" alt="" coords="385,229,507,256"/>
+</map>
