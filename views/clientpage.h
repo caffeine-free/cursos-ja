@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QMessageBox>
+#include <vector>
 
 #include "editclient.h"
 #include "../cursos-ja/src/lib/model.h"
@@ -49,13 +50,13 @@ public:
 
     void setTableData();
 
-    void buy_button_pressed();
+    void load_client_courses(const vector<Course*>&);
 
-    void load_client_courses();
-
-    void load_all_courses();
+    void load_all_courses(const vector<Course*>&);
 
 private slots:
+    void buy_button_pressed();
+
     void on_edit_profile_btn_clicked();
 
     void on_tabWidget_currentChanged(int index);
@@ -63,6 +64,10 @@ private slots:
     void on_logout_btn_clicked();
 
     void on_tabWidget_tabBarClicked(int index);
+
+    void on_btn_search_new_clicked();
+
+    void on_btn_search_clicked();
 
 private:
     Ui::clientPage *ui;

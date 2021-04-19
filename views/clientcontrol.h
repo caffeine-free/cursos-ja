@@ -46,11 +46,13 @@ private slots:
 
     void on_exit_adm_btn_clicked();
 
-    void on_edit_adm_client_btn_clicked();
-
     void on_add_user_btn_clicked();
 
     void on_tabWidget_tabBarClicked(int index);
+
+    void on_cancel_client_btn_clicked();
+
+    void on_cancel_course_btn_clicked();
 
 private:
     Ui::ClientControl *ui;

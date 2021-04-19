@@ -7,6 +7,9 @@
 #include "../cursos-ja/views/editclient.h"
 
 #include "editcourse.h"
+#include <regex>
+
+using std::regex;
 
 ClientControl::ClientControl(QWidget *parent) :
     QDialog(parent),
@@ -193,6 +196,14 @@ void ClientControl::setTableData(){
 
 void ClientControl::on_pushButton_clicked()
 {
+    while (ui->txt_Name->text().toStdString() == "" || ui->txt_description->text().toStdString() == "" || ui->txt_price->text().toStdString() == "")
+    {
+        QMessageBox::warning(
+            this, tr("Cadastro"),
+            tr("Preencha todos os campos!")
+        );
+        return;
+    };
     Course* c = new CourseImpl(
                 ui->txt_Name->text().toStdString(),
                 ui->txt_description->text().toStdString(),
@@ -232,27 +243,72 @@ void ClientControl::on_exit_adm_btn_clicked()
     l->exec();
 }
 
-void ClientControl::on_edit_adm_client_btn_clicked()
-{
-    editclient *ec = new editclient();
-    ec->setModel(model);
-    ec->setUser(model->getUser());
-    ec->exec();
-}
 
 void ClientControl::on_add_user_btn_clicked()
 {
-    vector<Course*> c;
+    string name=ui->txt_name_user->text().toStdString();
+    string email=ui->txt_email_user->text().toStdString();
+    string cpf=ui->txt_cpf_user->text().toStdString();
+    string password=ui->txt_pass_user->text().toStdString();
+    string confirmPassword=ui->txt_cpass_user->text().toStdString();
 
-    if ( ui->txt_pass_user->text() == ui->txt_cpass_user->text() ){
-        User* u = new UserImpl(
-                    ui->txt_name_user->text().toStdString(),
-                    ui->txt_email_user->text().toStdString(),
-                    ui->txt_cpf_user->text().toStdString(),
-                    ui->txt_pass_user->text().toStdString(),
-                    c,
-                    ui->txt_permission->text().toInt()
-                    );
+    while (name == "" || email == "" || cpf == ""
+        || password == "") {
+
+        QMessageBox::warning(
+            this, tr("Cadastro"),
+            tr("Preencha todos os campos!")
+        );
+        return;
+    };
+
+    if( password != confirmPassword){
+        QMessageBox::warning(
+            this, tr("Cadastro"),
+            tr("Os campos de senha não coincidem!")
+        );
+        return;
+    }
+
+    if (!regex_match(email, regex("([a-z]+)([_.a-z0-9]*)([a-z0-9]+)(@)([a-z]+)([.a-z]+)([a-z]+)"))){
+        QMessageBox::warning(
+            this, tr("Cadastro"),
+            tr("Informe um email válido")
+        );
+        return;
+    }
+    Course* course_1;
+    Course* course_2;
+    Course* course_3;
+    Course* course_4;
+    Course* course_5;
+
+    string  course_name, course_description, course_price;
+    course_name = "vazio";
+    course_description = "vazio";
+    course_price = "vazio";
+
+    course_1 = model->createCourse(course_name, course_description, course_price);
+    course_2 = model->createCourse(course_name, course_description, course_price);
+    course_3 = model->createCourse(course_name, course_description, course_price);
+    course_4 = model->createCourse(course_name, course_description, course_price);
+    course_5 = model->createCourse(course_name, course_description, course_price);
+
+    vector<Course*> courses;
+    courses.push_back(course_1);
+    courses.push_back(course_2);
+    courses.push_back(course_3);
+    courses.push_back(course_4);
+    courses.push_back(course_5);
+
+     User* u = new UserImpl(
+                ui->txt_name_user->text().toStdString(),
+                ui->txt_email_user->text().toStdString(),
+                ui->txt_cpf_user->text().toStdString(),
+                ui->txt_pass_user->text().toStdString(),
+                courses,
+                ui->txt_permission->text().toInt()
+                );
 
         this->model->addUser(u);
         this->model->writeUser("../cursos-ja/database/users.csv");
@@ -266,12 +322,28 @@ void ClientControl::on_add_user_btn_clicked()
         ui->txt_pass_user->clear();
         ui->txt_cpass_user->clear();
         ui->txt_permission->clear();
-    } else {
-        QMessageBox::information(this, "GRAVADO", "As senhas não são iguais!");
-    }
+
 }
 
 void ClientControl::on_tabWidget_tabBarClicked(int index)
 {
     setTableData();
+}
+
+
+void ClientControl::on_cancel_course_btn_clicked()
+{
+    ui->txt_Name->clear();
+    ui->txt_description->clear();
+    ui->txt_price->clear();
+}
+
+void ClientControl::on_cancel_client_btn_clicked()
+{
+    ui->txt_name_user->clear();
+    ui->txt_email_user->clear();
+    ui->txt_cpf_user->clear();
+    ui->txt_pass_user->clear();
+    ui->txt_cpass_user->clear();
+    ui->txt_permission->clear();
 }

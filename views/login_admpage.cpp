@@ -33,7 +33,41 @@ login_admpage::~login_admpage()
     delete ui;
 }
 
-void login_admpage::on_pushButton_clicked()
-{
-    admpage->exec();
+void login_admpage::on_pushButton_clicked(){
+
+    if (ui->txt_login->text().toStdString() == "" || ui->txt_senha->text().toStdString() == "") {
+        QMessageBox::information(
+            this,
+            tr("LoginAdm"),
+            tr("Informe todos os campos!")
+        );
+
+        return;
+    }
+
+    if (ui->txt_login->text().toStdString() != "admin") {
+        QMessageBox::information(
+            this,
+            tr("LoginAdm"),
+            tr("Usuário não encontrado!")
+        );
+
+        return;
+    }
+    if (ui->txt_senha->text().toStdString() != "admin") {
+        QMessageBox::information(
+            this,
+            tr("LoginAdm"),
+            tr("Senha incorreta")
+        );
+
+        return;
+    }
+
+
+
+
+    ClientControl* cc = new ClientControl();
+    cc->setModel(model);
+    cc->exec();
 }
