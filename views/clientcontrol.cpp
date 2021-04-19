@@ -35,6 +35,8 @@ void ClientControl::setModel(Model *value)
 void ClientControl::load_course_data(){
     int count = 0;
     ui->table_adm_courses->setSortingEnabled(false);
+    ui->table_adm_courses->setSelectionBehavior(QAbstractItemView::SelectRows);
+
     for(auto it : this->model->getCourses()){
         QString name = QString::fromStdString(it->getName());
         QTableWidgetItem *name_item = new QTableWidgetItem(name, Qt::DisplayRole);
@@ -64,7 +66,8 @@ void ClientControl::load_course_data(){
 
 void ClientControl::edit_course_button_pressed(){
     QPushButton* buttonSender = qobject_cast<QPushButton*>(sender());
-    int row = ui->table_adm_courses->indexAt(buttonSender->pos()).row();
+    //int row = ui->table_adm_courses->indexAt(buttonSender->pos()).row();
+    int row=ui->table_adm_courses->currentRow();
 
     EditCourse* ec = new EditCourse();
     ec->setModel(model);
@@ -76,7 +79,8 @@ void ClientControl::edit_course_button_pressed(){
 
 void ClientControl::edit_user_pressed(){
     QPushButton* buttonSender = qobject_cast<QPushButton*>(sender());
-    int row = ui->table_adm_courses->indexAt(buttonSender->pos()).row();
+    //int row = ui->table_adm_courses->indexAt(buttonSender->pos()).row();
+    int row=ui->table_adm_user->currentRow();
 
     editclient* ec = new editclient();
     ec->setModel(model);
@@ -88,9 +92,13 @@ void ClientControl::edit_user_pressed(){
 
 void ClientControl::remove_course_button_pressed(){
     QPushButton* buttonSender = qobject_cast<QPushButton*>(sender());
-    int row = ui->table_adm_courses->indexAt(buttonSender->pos()).row();
+    //int row = ui->table_adm_courses->indexAt(buttonSender->pos()).row();
+    int row=ui->table_adm_courses->currentRow();
+
 
     model->removeCourse(model->getCourses()[row]);
+    ui->table_adm_courses->removeRow(row);
+
 
     QMessageBox::information(this, "GRAVADO", "O curso foi removido!");
 
@@ -100,10 +108,10 @@ void ClientControl::remove_course_button_pressed(){
 
 void ClientControl::remove_user_pressed(){
     QPushButton* buttonSender = qobject_cast<QPushButton*>(sender());
-    int row = ui->table_adm_courses->indexAt(buttonSender->pos()).row();
-
+    //int row = ui->table_adm_courses->indexAt(buttonSender->pos()).row();
+    int row=ui->table_adm_user->currentRow();
     model->removeUser(model->getUserList()[row]);
-
+    ui->table_adm_user->removeRow(row);
     QMessageBox::information(this, "REMOVIDO", "O usuário foi removido!");
 
     model->writeUser("../cursos-ja/database/users.csv");
@@ -113,6 +121,8 @@ void ClientControl::remove_user_pressed(){
 void ClientControl::load_user_data(){
     int count = 0;
     ui->table_adm_courses->setSortingEnabled(false);
+
+    ui->table_adm_user->setSelectionBehavior(QAbstractItemView::SelectRows);
     for(auto it : this->model->getUserList()){
         QString name = QString::fromStdString(it->getName());
         QTableWidgetItem *name_item = new QTableWidgetItem(name, Qt::DisplayRole);
@@ -244,7 +254,7 @@ void ClientControl::on_add_user_btn_clicked()
                     ui->txt_permission->text().toInt()
                     );
 
-        this->model->add(u);
+        this->model->addUser(u);
         this->model->writeUser("../cursos-ja/database/users.csv");
 
         QMessageBox::information(this, "GRAVADO", "Usuário cadastrado com sucesso!");
@@ -259,4 +269,9 @@ void ClientControl::on_add_user_btn_clicked()
     } else {
         QMessageBox::information(this, "GRAVADO", "As senhas não são iguais!");
     }
+}
+
+void ClientControl::on_tabWidget_tabBarClicked(int index)
+{
+    setTableData();
 }

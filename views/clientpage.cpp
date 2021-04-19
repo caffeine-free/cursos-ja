@@ -180,3 +180,8 @@ void clientPage::on_logout_btn_clicked()
     l->exec();
 
 }
+
+void clientPage::on_tabWidget_tabBarClicked(int index)
+{
+    setTableData();
+}
