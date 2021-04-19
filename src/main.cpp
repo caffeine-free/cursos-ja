@@ -15,9 +15,9 @@ int main(int argc, char* argv[]) {
    /* addCourse* addcourse = new addCourse();
     addcourse->setModel(model);*/
 
-    //login login;
+    login login;
 
-    //return login.exec();
+    return login.exec();
     //return addcourse->exec();
 
     /*editclient* ec = new editclient();
@@ -33,9 +33,9 @@ int main(int argc, char* argv[]) {
     cp->setTableData();
     cp->exec();*/
 
-    ClientControl* cp = new ClientControl();
+    /*ClientControl* cp = new ClientControl();
     cp->setModel(model);
     cp->setTableData();
     cp->load_all_clients();
-    cp->exec();
+    cp->exec();*/
 }

@@ -80,7 +80,7 @@ public:
      */
     void add(Course*);
 
-    void add(User* user);
+    void addUser(User* user);
 
     /**
      * @brief Create a User object
