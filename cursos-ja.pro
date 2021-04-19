@@ -14,6 +14,7 @@ SOURCES += \
     src/lib/model_impl.cpp \
     src/lib/register_impl.cpp \
     src/main.cpp \
+    tests/functional/functional_tests.cpp \
     tests/unit/unit_course.cpp \
     tests/unit/unit_user.cpp \
     views/clientcontrol.cpp \
@@ -33,6 +34,7 @@ HEADERS += \
     src/lib/model_impl.h \
     src/lib/register.h \
     src/lib/register.impl.h \
+    tests/functional/functional_tests.h \
     tests/unit/unit_course.h \
     tests/unit/unit_user.h \
     views/clientcontrol.h \

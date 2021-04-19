@@ -25,9 +25,6 @@ int main(int argc, char* argv[]) {
 
     return l->exec();
 
-
-
-
   /* ClientControl* cp = new ClientControl();
     cp->setModel(model);
     cp->setTableData();
@@ -39,5 +36,4 @@ int main(int argc, char* argv[]) {
     clientPage* cpage = new clientPage();
     cpage->setModel(model);
     cpage->exec(); */
-
 }
