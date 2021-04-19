@@ -1,0 +1,26 @@
+var classModelImpl =
+[
+    [ "ModelImpl", "classModelImpl.html#a081505846c37ce9928f2176d77db4bc8", null ],
+    [ "~ModelImpl", "classModelImpl.html#a427f422a6d356b94afbe3937d6452a2b", null ],
+    [ "add", "classModelImpl.html#a1847f819acc9bf909e31ec3438973225", null ],
+    [ "addUser", "classModelImpl.html#aa0c7acd29ab42d13227e0e85fea044c8", null ],
+    [ "createCourse", "classModelImpl.html#a9bcdb7f3c69ac4f86f253a9422ae6ce9", null ],
+    [ "createUser", "classModelImpl.html#affad955ee2bdbfc58ac049632cd9668b", null ],
+    [ "getCourses", "classModelImpl.html#afc84ed40271afee13778f4e9f9f90e2e", null ],
+    [ "getUser", "classModelImpl.html#ac098ad97916ff988d518ded5056dabb0", null ],
+    [ "getUserList", "classModelImpl.html#a46f441c1ba57cc395e6732cab80e78fd", null ],
+    [ "readCourse", "classModelImpl.html#aba86d399703fe35c086d6ff5647e48da", null ],
+    [ "readUser", "classModelImpl.html#a132c46a2d6ca86c7374a065b3079fe15", null ],
+    [ "removeCourse", "classModelImpl.html#ae46076a7e4b54d24ba15fb2eb8e7f33d", null ],
+    [ "removeUser", "classModelImpl.html#a51130aa538cd27b1cac6919cbbef05ee", null ],
+    [ "setCourses", "classModelImpl.html#ae90d5e4e7ec786f3752a6551dab39d66", null ],
+    [ "setUser", "classModelImpl.html#a9e1a1953a4d3355e147515c2a0b3c031", null ],
+    [ "setUserList", "classModelImpl.html#a617c58790e2b2207a3ce7e860a56e3a1", null ],
+    [ "updateCourse", "classModelImpl.html#aec25920972acddf92114b2b3581b9d66", null ],
+    [ "updateUser", "classModelImpl.html#a8088106fd8837da688f9334ab143db4c", null ],
+    [ "writeCourse", "classModelImpl.html#a6ce3d79c0b49abe19c034dfb30d023d7", null ],
+    [ "writeUser", "classModelImpl.html#a42b5948a513af3e20645cdb63fb6be76", null ],
+    [ "courses", "classModelImpl.html#aa724c97a6f6614f92546e2332a0eb25c", null ],
+    [ "user", "classModelImpl.html#a76f8d6f7634f9395c2576a5d11628e13", null ],
+    [ "users", "classModelImpl.html#ae18f19dcf67479449d5e0684ed89320b", null ]
+];

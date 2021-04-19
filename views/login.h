@@ -45,17 +45,38 @@ public:
      */
     void setReg(registerview *value);
 
+    /**
+     * @brief Get the Model object
+     * 
+     * @return Model* the Login's model
+     */
     Model *getModel() const;
+
+    /**
+     * @brief Set the Model object
+     * 
+     * @param value the Login's new model
+     */
     void setModel(Model *value);
 
+    /**
+     * @brief Get the Login Adm Page object
+     * 
+     * @return login_admpage* the Login's Admpage
+     */
     login_admpage* getLoginAdmPage() const;
 
+    /**
+     * @brief Set the Login Adm Page object
+     * 
+     * @param value the new Login's Admpage
+     */
     void setLoginAdmPage(login_admpage *value);
 
 
 private slots:
     /**
-     * @brief the function button
+     * @brief the function button to redirect to the Admpage
      *
      */
     void on_btn_admPage_clicked();
@@ -65,17 +86,17 @@ private slots:
      */
     void on_pushButton_clicked();
     /**
-     * @brief the function button
+     * @brief the function button to redirect to the register user view
      *
      */
     void on_btn_newClient_clicked();
 
 private:
-    Ui::login *ui;
-    Model* model;
-    registerview* reg;
+    Ui::login *ui; // The Login's ui
+    Model* model; // The Login's model
+    registerview* reg; // The Login's register view to be redirected
 
-    login_admpage* l_admpage;
+    login_admpage* l_admpage; // The Login's Login Admpage's to be redirected
 };
 
 #endif // LOGIN_H

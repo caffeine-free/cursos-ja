@@ -1,0 +1,300 @@
+\hypertarget{classUser}{}\section{User Class Reference}
+\label{classUser}\index{User@{User}}
+
+
+this class represents an user  
+
+
+
+
+{\ttfamily \#include $<$user.\+h$>$}
+
+
+
+Inheritance diagram for User\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{classUser__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classUser_a7d1cf7c22ba031caec015ec427419513}{$\sim$\+User} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \hyperlink{classUser}{User} object. \end{DoxyCompactList}\item 
+virtual string \hyperlink{classUser_a10b64aca04c37b66fcb5a112e87f97ac}{get\+Name} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Name fobject. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classUser_a47339f4f166d9baa023fdd59e81c965d}{set\+Name} (const string \&)=0
+\begin{DoxyCompactList}\small\item\em Set the Name object. \end{DoxyCompactList}\item 
+virtual string \hyperlink{classUser_a58eae5ae9bc079ca5ee31c41326b229e}{get\+Email} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Email object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classUser_ac72e220fdcbb3decc392d2729f27e6b5}{set\+Email} (const string \&)=0
+\begin{DoxyCompactList}\small\item\em Set the Email object. \end{DoxyCompactList}\item 
+virtual string \hyperlink{classUser_a2a23ddf63962cdb3d8cef2054a0a27a0}{get\+C\+PF} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Birth object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classUser_ac10d34adddaa80cb544eab7c5b1227f5}{set\+C\+PF} (const string \&)=0
+\begin{DoxyCompactList}\small\item\em Set the Birth object. \end{DoxyCompactList}\item 
+virtual string \hyperlink{classUser_a29d4b884ba9f2a3f28a77368c86239fd}{get\+Password} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Password object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classUser_a809c17ec3427917ae2e641d171cb99d2}{set\+Password} (const string \&)=0
+\begin{DoxyCompactList}\small\item\em Set the Password object. \end{DoxyCompactList}\item 
+virtual vector$<$ \hyperlink{classCourse}{Course} $\ast$ $>$ \& \hyperlink{classUser_a72be855a1f58cc705591413a72a8e346}{get\+Courses} ()=0
+\begin{DoxyCompactList}\small\item\em Get the Courses object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classUser_a1b97c41fca71b2839d8acc57e9d006b2}{set\+Courses} (const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&)=0
+\begin{DoxyCompactList}\small\item\em Set the Courses object. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classUser_ae326f0c51a673f749ed57b9f0d0b723a}{get\+Permission} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Permission object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classUser_ab6a6689e3581c70af166b2eb537df6fb}{set\+Permission} (int)=0
+\begin{DoxyCompactList}\small\item\em Set the Permission object. \end{DoxyCompactList}\item 
+virtual \hyperlink{classUser}{User} \& \hyperlink{classUser_afd7134b455781d42362cf5fd0d5d2e68}{operator=} (\hyperlink{classUser}{User} \&)=0
+\begin{DoxyCompactList}\small\item\em assignment operator \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classUser_a461783a03e5a694a2cdd80fba7b18459}{operator==} (\hyperlink{classUser}{User} \&)=0
+\begin{DoxyCompactList}\small\item\em association operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class represents an user 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUser_a7d1cf7c22ba031caec015ec427419513}\label{classUser_a7d1cf7c22ba031caec015ec427419513}} 
+\index{User@{User}!````~User@{$\sim$\+User}}
+\index{````~User@{$\sim$\+User}!User@{User}}
+\subsubsection{\texorpdfstring{$\sim$\+User()}{~User()}}
+{\footnotesize\ttfamily virtual User\+::$\sim$\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the \hyperlink{classUser}{User} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classUser_a72be855a1f58cc705591413a72a8e346}\label{classUser_a72be855a1f58cc705591413a72a8e346}} 
+\index{User@{User}!get\+Courses@{get\+Courses}}
+\index{get\+Courses@{get\+Courses}!User@{User}}
+\subsubsection{\texorpdfstring{get\+Courses()}{getCourses()}}
+{\footnotesize\ttfamily virtual vector$<$\hyperlink{classCourse}{Course}$\ast$$>$\& User\+::get\+Courses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Courses object. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Course$\ast$$>$\& the user courses 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classUserImpl_aaac79e7ca4bf050cf0c180fb5ec2d751}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_a2a23ddf63962cdb3d8cef2054a0a27a0}\label{classUser_a2a23ddf63962cdb3d8cef2054a0a27a0}} 
+\index{User@{User}!get\+C\+PF@{get\+C\+PF}}
+\index{get\+C\+PF@{get\+C\+PF}!User@{User}}
+\subsubsection{\texorpdfstring{get\+C\+P\+F()}{getCPF()}}
+{\footnotesize\ttfamily virtual string User\+::get\+C\+PF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Birth object. 
+
+\begin{DoxyReturn}{Returns}
+string the user birthday 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classUserImpl_aa20a69738aa1b1ee2e04a6aa65833440}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_a58eae5ae9bc079ca5ee31c41326b229e}\label{classUser_a58eae5ae9bc079ca5ee31c41326b229e}} 
+\index{User@{User}!get\+Email@{get\+Email}}
+\index{get\+Email@{get\+Email}!User@{User}}
+\subsubsection{\texorpdfstring{get\+Email()}{getEmail()}}
+{\footnotesize\ttfamily virtual string User\+::get\+Email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Email object. 
+
+\begin{DoxyReturn}{Returns}
+string the user email 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classUserImpl_add6a78d438f5dc401b220c39c7d40a61}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_a10b64aca04c37b66fcb5a112e87f97ac}\label{classUser_a10b64aca04c37b66fcb5a112e87f97ac}} 
+\index{User@{User}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!User@{User}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily virtual string User\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Name fobject. 
+
+\begin{DoxyReturn}{Returns}
+string the user name 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classUserImpl_afb305ca89d0de723270de3433e3b5fc1}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_a29d4b884ba9f2a3f28a77368c86239fd}\label{classUser_a29d4b884ba9f2a3f28a77368c86239fd}} 
+\index{User@{User}!get\+Password@{get\+Password}}
+\index{get\+Password@{get\+Password}!User@{User}}
+\subsubsection{\texorpdfstring{get\+Password()}{getPassword()}}
+{\footnotesize\ttfamily virtual string User\+::get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Password object. 
+
+\begin{DoxyReturn}{Returns}
+string the user password 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classUserImpl_a984ad7c34f6893ad4c06bb7d31b0afb0}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_ae326f0c51a673f749ed57b9f0d0b723a}\label{classUser_ae326f0c51a673f749ed57b9f0d0b723a}} 
+\index{User@{User}!get\+Permission@{get\+Permission}}
+\index{get\+Permission@{get\+Permission}!User@{User}}
+\subsubsection{\texorpdfstring{get\+Permission()}{getPermission()}}
+{\footnotesize\ttfamily virtual int User\+::get\+Permission (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Permission object. 
+
+\begin{DoxyReturn}{Returns}
+int the user permission level 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classUserImpl_ac2233b5f85222b2db6a1877083374973}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_afd7134b455781d42362cf5fd0d5d2e68}\label{classUser_afd7134b455781d42362cf5fd0d5d2e68}} 
+\index{User@{User}!operator=@{operator=}}
+\index{operator=@{operator=}!User@{User}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily virtual \hyperlink{classUser}{User}\& User\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classUser}{User} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+assignment operator 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classUser}{User}\& the user reference 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classUserImpl_aa89ed62b1dbd34811cf7e32137009b6d}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_a461783a03e5a694a2cdd80fba7b18459}\label{classUser_a461783a03e5a694a2cdd80fba7b18459}} 
+\index{User@{User}!operator==@{operator==}}
+\index{operator==@{operator==}!User@{User}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily virtual bool User\+::operator== (\begin{DoxyParamCaption}\item[{\hyperlink{classUser}{User} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+association operator 
+
+\begin{DoxyReturn}{Returns}
+true if it was successful 
+
+false if it failed 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classUserImpl_a1b79e70d839345e3ea0b05637183c1e1}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_a1b97c41fca71b2839d8acc57e9d006b2}\label{classUser_a1b97c41fca71b2839d8acc57e9d006b2}} 
+\index{User@{User}!set\+Courses@{set\+Courses}}
+\index{set\+Courses@{set\+Courses}!User@{User}}
+\subsubsection{\texorpdfstring{set\+Courses()}{setCourses()}}
+{\footnotesize\ttfamily virtual void User\+::set\+Courses (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Courses object. 
+
+
+
+Implemented in \hyperlink{classUserImpl_a0b01431638678ab1f7e39202c2374e4e}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_ac10d34adddaa80cb544eab7c5b1227f5}\label{classUser_ac10d34adddaa80cb544eab7c5b1227f5}} 
+\index{User@{User}!set\+C\+PF@{set\+C\+PF}}
+\index{set\+C\+PF@{set\+C\+PF}!User@{User}}
+\subsubsection{\texorpdfstring{set\+C\+P\+F()}{setCPF()}}
+{\footnotesize\ttfamily virtual void User\+::set\+C\+PF (\begin{DoxyParamCaption}\item[{const string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Birth object. 
+
+
+
+Implemented in \hyperlink{classUserImpl_a9964fc4ed651ce945f663cb4df8e042b}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_ac72e220fdcbb3decc392d2729f27e6b5}\label{classUser_ac72e220fdcbb3decc392d2729f27e6b5}} 
+\index{User@{User}!set\+Email@{set\+Email}}
+\index{set\+Email@{set\+Email}!User@{User}}
+\subsubsection{\texorpdfstring{set\+Email()}{setEmail()}}
+{\footnotesize\ttfamily virtual void User\+::set\+Email (\begin{DoxyParamCaption}\item[{const string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Email object. 
+
+
+
+Implemented in \hyperlink{classUserImpl_abbd8347c11bd2ea93d37ec123b42dc6b}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_a47339f4f166d9baa023fdd59e81c965d}\label{classUser_a47339f4f166d9baa023fdd59e81c965d}} 
+\index{User@{User}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!User@{User}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily virtual void User\+::set\+Name (\begin{DoxyParamCaption}\item[{const string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Name object. 
+
+
+
+Implemented in \hyperlink{classUserImpl_a30507ad79190a2ad7d896b6c4a55fab4}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_a809c17ec3427917ae2e641d171cb99d2}\label{classUser_a809c17ec3427917ae2e641d171cb99d2}} 
+\index{User@{User}!set\+Password@{set\+Password}}
+\index{set\+Password@{set\+Password}!User@{User}}
+\subsubsection{\texorpdfstring{set\+Password()}{setPassword()}}
+{\footnotesize\ttfamily virtual void User\+::set\+Password (\begin{DoxyParamCaption}\item[{const string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Password object. 
+
+
+
+Implemented in \hyperlink{classUserImpl_a85b0f1b2faebc315a2f5e4a128137101}{User\+Impl}.
+
+\mbox{\Hypertarget{classUser_ab6a6689e3581c70af166b2eb537df6fb}\label{classUser_ab6a6689e3581c70af166b2eb537df6fb}} 
+\index{User@{User}!set\+Permission@{set\+Permission}}
+\index{set\+Permission@{set\+Permission}!User@{User}}
+\subsubsection{\texorpdfstring{set\+Permission()}{setPermission()}}
+{\footnotesize\ttfamily virtual void User\+::set\+Permission (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Permission object. 
+
+
+
+Implemented in \hyperlink{classUserImpl_ac273d611344f59bf69e6eabb412e84ee}{User\+Impl}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/classes/\hyperlink{user_8h}{user.\+h}\end{DoxyCompactItemize}

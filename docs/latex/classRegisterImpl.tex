@@ -1,0 +1,210 @@
+\hypertarget{classRegisterImpl}{}\section{Register\+Impl Class Reference}
+\label{classRegisterImpl}\index{Register\+Impl@{Register\+Impl}}
+
+
+this class represents a register  
+
+
+
+
+{\ttfamily \#include $<$register.\+impl.\+h$>$}
+
+
+
+Inheritance diagram for Register\+Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classRegisterImpl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Register\+Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classRegisterImpl__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRegisterImpl_a601b77faf4f07f51170821a189fed94f}{Register\+Impl} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classRegister}{Register} Impl object. \end{DoxyCompactList}\item 
+\hyperlink{classRegisterImpl_ab227f612d7fdd113cab53c9559b0c8f9}{$\sim$\+Register\+Impl} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \hyperlink{classRegister}{Register} Impl object. \end{DoxyCompactList}\item 
+bool \hyperlink{classRegisterImpl_af0463a5627b02b797a4a9d5d90f55a46}{create} (\hyperlink{classModel}{Model} $\ast$, string, string, string, string, const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&, int)
+\begin{DoxyCompactList}\small\item\em register an user \end{DoxyCompactList}\item 
+bool \hyperlink{classRegisterImpl_a528ea874f5607abfea9fea4b8cab1628}{remove} (\hyperlink{classModel}{Model} $\ast$, \hyperlink{classUser}{User} $\ast$)
+\begin{DoxyCompactList}\small\item\em remove an user \end{DoxyCompactList}\item 
+void \hyperlink{classRegisterImpl_a5ae0846ac09fe620501b94f5e05bcd9d}{update} (\hyperlink{classModel}{Model} $\ast$, \hyperlink{classUser}{User} $\ast$, string, string, string, string, const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&, int)
+\begin{DoxyCompactList}\small\item\em update an user \end{DoxyCompactList}\item 
+bool \hyperlink{classRegisterImpl_ad60a7330160adae90443acb547398bd9}{search} (\hyperlink{classModel}{Model} $\ast$, const string \&) const
+\begin{DoxyCompactList}\small\item\em search an user \end{DoxyCompactList}\item 
+\hyperlink{classUser}{User} $\ast$ \hyperlink{classRegisterImpl_afe762d2896bb50b551e7b317c4936ac3}{consult} (\hyperlink{classModel}{Model} $\ast$, const string \&) const
+\begin{DoxyCompactList}\small\item\em consult an user \end{DoxyCompactList}\item 
+bool \hyperlink{classRegisterImpl_a3c0a7f6df3b0be5ce7fe8d7a78214304}{Validate\+Email} (string)
+\begin{DoxyCompactList}\small\item\em validate the user email \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classRegister}{Register} $\ast$ \hyperlink{classRegisterImpl_a505a9051efb8758a31da6ce97241741c}{create\+Register} ()
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classRegister}{Register} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class represents a register 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRegisterImpl_a601b77faf4f07f51170821a189fed94f}\label{classRegisterImpl_a601b77faf4f07f51170821a189fed94f}} 
+\index{Register\+Impl@{Register\+Impl}!Register\+Impl@{Register\+Impl}}
+\index{Register\+Impl@{Register\+Impl}!Register\+Impl@{Register\+Impl}}
+\subsubsection{\texorpdfstring{Register\+Impl()}{RegisterImpl()}}
+{\footnotesize\ttfamily Register\+Impl\+::\+Register\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \hyperlink{classRegister}{Register} Impl object. 
+
+\mbox{\Hypertarget{classRegisterImpl_ab227f612d7fdd113cab53c9559b0c8f9}\label{classRegisterImpl_ab227f612d7fdd113cab53c9559b0c8f9}} 
+\index{Register\+Impl@{Register\+Impl}!````~Register\+Impl@{$\sim$\+Register\+Impl}}
+\index{````~Register\+Impl@{$\sim$\+Register\+Impl}!Register\+Impl@{Register\+Impl}}
+\subsubsection{\texorpdfstring{$\sim$\+Register\+Impl()}{~RegisterImpl()}}
+{\footnotesize\ttfamily Register\+Impl\+::$\sim$\+Register\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \hyperlink{classRegister}{Register} Impl object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRegisterImpl_afe762d2896bb50b551e7b317c4936ac3}\label{classRegisterImpl_afe762d2896bb50b551e7b317c4936ac3}} 
+\index{Register\+Impl@{Register\+Impl}!consult@{consult}}
+\index{consult@{consult}!Register\+Impl@{Register\+Impl}}
+\subsubsection{\texorpdfstring{consult()}{consult()}}
+{\footnotesize\ttfamily \hyperlink{classUser}{User} $\ast$ Register\+Impl\+::consult (\begin{DoxyParamCaption}\item[{\hyperlink{classModel}{Model} $\ast$}]{model,  }\item[{const string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+consult an user 
+
+\begin{DoxyReturn}{Returns}
+User$\ast$ the user pointer 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRegister_ae1cb0de5f04828c81d2dbad9650e1d6f}{Register}.
+
+\mbox{\Hypertarget{classRegisterImpl_af0463a5627b02b797a4a9d5d90f55a46}\label{classRegisterImpl_af0463a5627b02b797a4a9d5d90f55a46}} 
+\index{Register\+Impl@{Register\+Impl}!create@{create}}
+\index{create@{create}!Register\+Impl@{Register\+Impl}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily bool Register\+Impl\+::create (\begin{DoxyParamCaption}\item[{\hyperlink{classModel}{Model} $\ast$}]{model,  }\item[{string}]{name,  }\item[{string}]{email,  }\item[{string}]{cpf,  }\item[{string}]{password,  }\item[{const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&}]{courses,  }\item[{int}]{permission }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+register an user 
+
+\begin{DoxyReturn}{Returns}
+true if it was successful 
+
+false if it failed 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRegister_acfb8b5ecf7181faff5584765d78ab671}{Register}.
+
+\mbox{\Hypertarget{classRegisterImpl_a505a9051efb8758a31da6ce97241741c}\label{classRegisterImpl_a505a9051efb8758a31da6ce97241741c}} 
+\index{Register\+Impl@{Register\+Impl}!create\+Register@{create\+Register}}
+\index{create\+Register@{create\+Register}!Register\+Impl@{Register\+Impl}}
+\subsubsection{\texorpdfstring{create\+Register()}{createRegister()}}
+{\footnotesize\ttfamily \hyperlink{classRegister}{Register} $\ast$ Register\+Impl\+::create\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a \hyperlink{classRegister}{Register} object. 
+
+\begin{DoxyReturn}{Returns}
+Register$\ast$ the register pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRegisterImpl_a528ea874f5607abfea9fea4b8cab1628}\label{classRegisterImpl_a528ea874f5607abfea9fea4b8cab1628}} 
+\index{Register\+Impl@{Register\+Impl}!remove@{remove}}
+\index{remove@{remove}!Register\+Impl@{Register\+Impl}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily bool Register\+Impl\+::remove (\begin{DoxyParamCaption}\item[{\hyperlink{classModel}{Model} $\ast$}]{model,  }\item[{\hyperlink{classUser}{User} $\ast$}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+remove an user 
+
+\begin{DoxyReturn}{Returns}
+true if it was successful 
+
+false if it failed 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRegister_a09d7d6c24f7c07e97f7ef2d24a057f73}{Register}.
+
+\mbox{\Hypertarget{classRegisterImpl_ad60a7330160adae90443acb547398bd9}\label{classRegisterImpl_ad60a7330160adae90443acb547398bd9}} 
+\index{Register\+Impl@{Register\+Impl}!search@{search}}
+\index{search@{search}!Register\+Impl@{Register\+Impl}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily bool Register\+Impl\+::search (\begin{DoxyParamCaption}\item[{\hyperlink{classModel}{Model} $\ast$}]{model,  }\item[{const string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+search an user 
+
+\begin{DoxyReturn}{Returns}
+true if it was successful 
+
+false if it failed 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRegister_a243b58e5f1747437bab5175927cce26f}{Register}.
+
+\mbox{\Hypertarget{classRegisterImpl_a5ae0846ac09fe620501b94f5e05bcd9d}\label{classRegisterImpl_a5ae0846ac09fe620501b94f5e05bcd9d}} 
+\index{Register\+Impl@{Register\+Impl}!update@{update}}
+\index{update@{update}!Register\+Impl@{Register\+Impl}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Register\+Impl\+::update (\begin{DoxyParamCaption}\item[{\hyperlink{classModel}{Model} $\ast$}]{model,  }\item[{\hyperlink{classUser}{User} $\ast$}]{user,  }\item[{string}]{name,  }\item[{string}]{email,  }\item[{string}]{cpf,  }\item[{string}]{password,  }\item[{const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&}]{courses,  }\item[{int}]{permission }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+update an user 
+
+
+
+Implements \hyperlink{classRegister_ae1ca8b9044dff27a840a3d26fd5ea323}{Register}.
+
+\mbox{\Hypertarget{classRegisterImpl_a3c0a7f6df3b0be5ce7fe8d7a78214304}\label{classRegisterImpl_a3c0a7f6df3b0be5ce7fe8d7a78214304}} 
+\index{Register\+Impl@{Register\+Impl}!Validate\+Email@{Validate\+Email}}
+\index{Validate\+Email@{Validate\+Email}!Register\+Impl@{Register\+Impl}}
+\subsubsection{\texorpdfstring{Validate\+Email()}{ValidateEmail()}}
+{\footnotesize\ttfamily bool Register\+Impl\+::\+Validate\+Email (\begin{DoxyParamCaption}\item[{string}]{email }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+validate the user email 
+
+\begin{DoxyReturn}{Returns}
+true if it was successful 
+
+false if it failed 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRegister_aeeb9ead57f749601459240fc68cfe7b4}{Register}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/\hyperlink{register_8impl_8h}{register.\+impl.\+h}\item 
+src/lib/\hyperlink{register__impl_8cpp}{register\+\_\+impl.\+cpp}\end{DoxyCompactItemize}

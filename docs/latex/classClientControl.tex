@@ -1,0 +1,313 @@
+\hypertarget{classClientControl}{}\section{Client\+Control Class Reference}
+\label{classClientControl}\index{Client\+Control@{Client\+Control}}
+
+
+this class represents the Adm Page  
+
+
+
+
+{\ttfamily \#include $<$clientcontrol.\+h$>$}
+
+
+
+Inheritance diagram for Client\+Control\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classClientControl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Client\+Control\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classClientControl__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classClientControl_a2324d7192355735436aea9bfc7f84a5b}{Client\+Control} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new Client Control object. \end{DoxyCompactList}\item 
+\hyperlink{classClientControl_aaa2a3d2e93433ddc9256d34911d9b9bd}{$\sim$\+Client\+Control} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Client Control object. \end{DoxyCompactList}\item 
+\hyperlink{classModel}{Model} $\ast$ \hyperlink{classClientControl_aefc43486831b9e545a678abae5c592ca}{get\+Model} () const
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classModel}{Model} object. \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_a3713d76eb6439b0764809e49bc7662ee}{set\+Model} (\hyperlink{classModel}{Model} $\ast$value)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classModel}{Model} object. \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_aa3d376fbe49768251c1bf674a10c9944}{set\+Table\+Data} ()
+\begin{DoxyCompactList}\small\item\em Set the Table Data object. \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_ab599f87b2be620b137cdfc4eaa060e58}{load\+\_\+course\+\_\+data} ()
+\begin{DoxyCompactList}\small\item\em Load the courses to Table Widget. \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_a826a7dc819e15623625da76b4c66f396}{load\+\_\+user\+\_\+data} ()
+\begin{DoxyCompactList}\small\item\em Load the users to Table Widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classClientControl_a8f9b32ace74f3152e1781ca73d60a90d}{on\+\_\+push\+Button\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em function to edit course \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_a8d716e92624ff6d05525dfee0fbd9a30}{on\+\_\+tab\+Widget\+\_\+current\+Changed} (int index)
+\begin{DoxyCompactList}\small\item\em function to load table\textquotesingle{}s data \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_a830f0e76e43c64fee40bbcd542e1e355}{edit\+\_\+course\+\_\+button\+\_\+pressed} ()
+\begin{DoxyCompactList}\small\item\em function to edit course \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_a759a2a2c0470f7903e053ef534cea4db}{remove\+\_\+course\+\_\+button\+\_\+pressed} ()
+\begin{DoxyCompactList}\small\item\em function to remove course \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_a09604fd71dee98f12cd46c3252f1cabe}{remove\+\_\+user\+\_\+pressed} ()
+\begin{DoxyCompactList}\small\item\em function to remove user \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_a2c9466ca951a1b8c32f24e4ab1389ba5}{edit\+\_\+user\+\_\+pressed} ()
+\begin{DoxyCompactList}\small\item\em function to edit user \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_a52bd587841a7a49f3e86ca09c2e3372d}{on\+\_\+exit\+\_\+adm\+\_\+btn\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em function to logout \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_a727cca41aa894d4cf371cfbba6f961d1}{on\+\_\+add\+\_\+user\+\_\+btn\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em function to user insertion \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_a5a380eab783cb0fc1760417956cec0d5}{on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked} (int index)
+\begin{DoxyCompactList}\small\item\em load the Table Widget data \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_a8a46c9d7c91c26e0f4b779452cea8208}{on\+\_\+cancel\+\_\+client\+\_\+btn\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em Cancel user insertion. \end{DoxyCompactList}\item 
+void \hyperlink{classClientControl_a4771dbff3cfafb5d34d55a009cb073ff}{on\+\_\+cancel\+\_\+course\+\_\+btn\+\_\+clicked} ()
+\begin{DoxyCompactList}\small\item\em Cancel course insertion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Client\+Control $\ast$ \hyperlink{classClientControl_adea5f2cf529bedcc7d2aac9e2702d702}{ui}
+\item 
+\hyperlink{classModel}{Model} $\ast$ \hyperlink{classClientControl_a58fe6ae8049d307caa62f164a8c07eed}{model}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this class represents the Adm Page 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classClientControl_a2324d7192355735436aea9bfc7f84a5b}\label{classClientControl_a2324d7192355735436aea9bfc7f84a5b}} 
+\index{Client\+Control@{Client\+Control}!Client\+Control@{Client\+Control}}
+\index{Client\+Control@{Client\+Control}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{Client\+Control()}{ClientControl()}}
+{\footnotesize\ttfamily Client\+Control\+::\+Client\+Control (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Client Control object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classClientControl_aaa2a3d2e93433ddc9256d34911d9b9bd}\label{classClientControl_aaa2a3d2e93433ddc9256d34911d9b9bd}} 
+\index{Client\+Control@{Client\+Control}!````~Client\+Control@{$\sim$\+Client\+Control}}
+\index{````~Client\+Control@{$\sim$\+Client\+Control}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{$\sim$\+Client\+Control()}{~ClientControl()}}
+{\footnotesize\ttfamily Client\+Control\+::$\sim$\+Client\+Control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the Client Control object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classClientControl_a830f0e76e43c64fee40bbcd542e1e355}\label{classClientControl_a830f0e76e43c64fee40bbcd542e1e355}} 
+\index{Client\+Control@{Client\+Control}!edit\+\_\+course\+\_\+button\+\_\+pressed@{edit\+\_\+course\+\_\+button\+\_\+pressed}}
+\index{edit\+\_\+course\+\_\+button\+\_\+pressed@{edit\+\_\+course\+\_\+button\+\_\+pressed}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{edit\+\_\+course\+\_\+button\+\_\+pressed}{edit\_course\_button\_pressed}}
+{\footnotesize\ttfamily void Client\+Control\+::edit\+\_\+course\+\_\+button\+\_\+pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to edit course 
+
+\mbox{\Hypertarget{classClientControl_a2c9466ca951a1b8c32f24e4ab1389ba5}\label{classClientControl_a2c9466ca951a1b8c32f24e4ab1389ba5}} 
+\index{Client\+Control@{Client\+Control}!edit\+\_\+user\+\_\+pressed@{edit\+\_\+user\+\_\+pressed}}
+\index{edit\+\_\+user\+\_\+pressed@{edit\+\_\+user\+\_\+pressed}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{edit\+\_\+user\+\_\+pressed}{edit\_user\_pressed}}
+{\footnotesize\ttfamily void Client\+Control\+::edit\+\_\+user\+\_\+pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to edit user 
+
+\mbox{\Hypertarget{classClientControl_aefc43486831b9e545a678abae5c592ca}\label{classClientControl_aefc43486831b9e545a678abae5c592ca}} 
+\index{Client\+Control@{Client\+Control}!get\+Model@{get\+Model}}
+\index{get\+Model@{get\+Model}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{get\+Model()}{getModel()}}
+{\footnotesize\ttfamily \hyperlink{classModel}{Model} $\ast$ Client\+Control\+::get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \hyperlink{classModel}{Model} object. 
+
+\begin{DoxyReturn}{Returns}
+Model$\ast$ the page\textquotesingle{}s model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classClientControl_ab599f87b2be620b137cdfc4eaa060e58}\label{classClientControl_ab599f87b2be620b137cdfc4eaa060e58}} 
+\index{Client\+Control@{Client\+Control}!load\+\_\+course\+\_\+data@{load\+\_\+course\+\_\+data}}
+\index{load\+\_\+course\+\_\+data@{load\+\_\+course\+\_\+data}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{load\+\_\+course\+\_\+data()}{load\_course\_data()}}
+{\footnotesize\ttfamily void Client\+Control\+::load\+\_\+course\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Load the courses to Table Widget. 
+
+\mbox{\Hypertarget{classClientControl_a826a7dc819e15623625da76b4c66f396}\label{classClientControl_a826a7dc819e15623625da76b4c66f396}} 
+\index{Client\+Control@{Client\+Control}!load\+\_\+user\+\_\+data@{load\+\_\+user\+\_\+data}}
+\index{load\+\_\+user\+\_\+data@{load\+\_\+user\+\_\+data}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{load\+\_\+user\+\_\+data()}{load\_user\_data()}}
+{\footnotesize\ttfamily void Client\+Control\+::load\+\_\+user\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Load the users to Table Widget. 
+
+\mbox{\Hypertarget{classClientControl_a727cca41aa894d4cf371cfbba6f961d1}\label{classClientControl_a727cca41aa894d4cf371cfbba6f961d1}} 
+\index{Client\+Control@{Client\+Control}!on\+\_\+add\+\_\+user\+\_\+btn\+\_\+clicked@{on\+\_\+add\+\_\+user\+\_\+btn\+\_\+clicked}}
+\index{on\+\_\+add\+\_\+user\+\_\+btn\+\_\+clicked@{on\+\_\+add\+\_\+user\+\_\+btn\+\_\+clicked}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{on\+\_\+add\+\_\+user\+\_\+btn\+\_\+clicked}{on\_add\_user\_btn\_clicked}}
+{\footnotesize\ttfamily void Client\+Control\+::on\+\_\+add\+\_\+user\+\_\+btn\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to user insertion 
+
+\mbox{\Hypertarget{classClientControl_a8a46c9d7c91c26e0f4b779452cea8208}\label{classClientControl_a8a46c9d7c91c26e0f4b779452cea8208}} 
+\index{Client\+Control@{Client\+Control}!on\+\_\+cancel\+\_\+client\+\_\+btn\+\_\+clicked@{on\+\_\+cancel\+\_\+client\+\_\+btn\+\_\+clicked}}
+\index{on\+\_\+cancel\+\_\+client\+\_\+btn\+\_\+clicked@{on\+\_\+cancel\+\_\+client\+\_\+btn\+\_\+clicked}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{on\+\_\+cancel\+\_\+client\+\_\+btn\+\_\+clicked}{on\_cancel\_client\_btn\_clicked}}
+{\footnotesize\ttfamily void Client\+Control\+::on\+\_\+cancel\+\_\+client\+\_\+btn\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Cancel user insertion. 
+
+\mbox{\Hypertarget{classClientControl_a4771dbff3cfafb5d34d55a009cb073ff}\label{classClientControl_a4771dbff3cfafb5d34d55a009cb073ff}} 
+\index{Client\+Control@{Client\+Control}!on\+\_\+cancel\+\_\+course\+\_\+btn\+\_\+clicked@{on\+\_\+cancel\+\_\+course\+\_\+btn\+\_\+clicked}}
+\index{on\+\_\+cancel\+\_\+course\+\_\+btn\+\_\+clicked@{on\+\_\+cancel\+\_\+course\+\_\+btn\+\_\+clicked}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{on\+\_\+cancel\+\_\+course\+\_\+btn\+\_\+clicked}{on\_cancel\_course\_btn\_clicked}}
+{\footnotesize\ttfamily void Client\+Control\+::on\+\_\+cancel\+\_\+course\+\_\+btn\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Cancel course insertion. 
+
+\mbox{\Hypertarget{classClientControl_a52bd587841a7a49f3e86ca09c2e3372d}\label{classClientControl_a52bd587841a7a49f3e86ca09c2e3372d}} 
+\index{Client\+Control@{Client\+Control}!on\+\_\+exit\+\_\+adm\+\_\+btn\+\_\+clicked@{on\+\_\+exit\+\_\+adm\+\_\+btn\+\_\+clicked}}
+\index{on\+\_\+exit\+\_\+adm\+\_\+btn\+\_\+clicked@{on\+\_\+exit\+\_\+adm\+\_\+btn\+\_\+clicked}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{on\+\_\+exit\+\_\+adm\+\_\+btn\+\_\+clicked}{on\_exit\_adm\_btn\_clicked}}
+{\footnotesize\ttfamily void Client\+Control\+::on\+\_\+exit\+\_\+adm\+\_\+btn\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to logout 
+
+\mbox{\Hypertarget{classClientControl_a8f9b32ace74f3152e1781ca73d60a90d}\label{classClientControl_a8f9b32ace74f3152e1781ca73d60a90d}} 
+\index{Client\+Control@{Client\+Control}!on\+\_\+push\+Button\+\_\+clicked@{on\+\_\+push\+Button\+\_\+clicked}}
+\index{on\+\_\+push\+Button\+\_\+clicked@{on\+\_\+push\+Button\+\_\+clicked}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{on\+\_\+push\+Button\+\_\+clicked}{on\_pushButton\_clicked}}
+{\footnotesize\ttfamily void Client\+Control\+::on\+\_\+push\+Button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to edit course 
+
+\mbox{\Hypertarget{classClientControl_a8d716e92624ff6d05525dfee0fbd9a30}\label{classClientControl_a8d716e92624ff6d05525dfee0fbd9a30}} 
+\index{Client\+Control@{Client\+Control}!on\+\_\+tab\+Widget\+\_\+current\+Changed@{on\+\_\+tab\+Widget\+\_\+current\+Changed}}
+\index{on\+\_\+tab\+Widget\+\_\+current\+Changed@{on\+\_\+tab\+Widget\+\_\+current\+Changed}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{on\+\_\+tab\+Widget\+\_\+current\+Changed}{on\_tabWidget\_currentChanged}}
+{\footnotesize\ttfamily void Client\+Control\+::on\+\_\+tab\+Widget\+\_\+current\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to load table\textquotesingle{}s data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the aba index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classClientControl_a5a380eab783cb0fc1760417956cec0d5}\label{classClientControl_a5a380eab783cb0fc1760417956cec0d5}} 
+\index{Client\+Control@{Client\+Control}!on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked@{on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked}}
+\index{on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked@{on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked}{on\_tabWidget\_tabBarClicked}}
+{\footnotesize\ttfamily void Client\+Control\+::on\+\_\+tab\+Widget\+\_\+tab\+Bar\+Clicked (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+load the Table Widget data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classClientControl_a759a2a2c0470f7903e053ef534cea4db}\label{classClientControl_a759a2a2c0470f7903e053ef534cea4db}} 
+\index{Client\+Control@{Client\+Control}!remove\+\_\+course\+\_\+button\+\_\+pressed@{remove\+\_\+course\+\_\+button\+\_\+pressed}}
+\index{remove\+\_\+course\+\_\+button\+\_\+pressed@{remove\+\_\+course\+\_\+button\+\_\+pressed}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{remove\+\_\+course\+\_\+button\+\_\+pressed}{remove\_course\_button\_pressed}}
+{\footnotesize\ttfamily void Client\+Control\+::remove\+\_\+course\+\_\+button\+\_\+pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to remove course 
+
+\mbox{\Hypertarget{classClientControl_a09604fd71dee98f12cd46c3252f1cabe}\label{classClientControl_a09604fd71dee98f12cd46c3252f1cabe}} 
+\index{Client\+Control@{Client\+Control}!remove\+\_\+user\+\_\+pressed@{remove\+\_\+user\+\_\+pressed}}
+\index{remove\+\_\+user\+\_\+pressed@{remove\+\_\+user\+\_\+pressed}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{remove\+\_\+user\+\_\+pressed}{remove\_user\_pressed}}
+{\footnotesize\ttfamily void Client\+Control\+::remove\+\_\+user\+\_\+pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+function to remove user 
+
+\mbox{\Hypertarget{classClientControl_a3713d76eb6439b0764809e49bc7662ee}\label{classClientControl_a3713d76eb6439b0764809e49bc7662ee}} 
+\index{Client\+Control@{Client\+Control}!set\+Model@{set\+Model}}
+\index{set\+Model@{set\+Model}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{set\+Model()}{setModel()}}
+{\footnotesize\ttfamily void Client\+Control\+::set\+Model (\begin{DoxyParamCaption}\item[{\hyperlink{classModel}{Model} $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the \hyperlink{classModel}{Model} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the new page\textquotesingle{}s model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classClientControl_aa3d376fbe49768251c1bf674a10c9944}\label{classClientControl_aa3d376fbe49768251c1bf674a10c9944}} 
+\index{Client\+Control@{Client\+Control}!set\+Table\+Data@{set\+Table\+Data}}
+\index{set\+Table\+Data@{set\+Table\+Data}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{set\+Table\+Data()}{setTableData()}}
+{\footnotesize\ttfamily void Client\+Control\+::set\+Table\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the Table Data object. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classClientControl_a58fe6ae8049d307caa62f164a8c07eed}\label{classClientControl_a58fe6ae8049d307caa62f164a8c07eed}} 
+\index{Client\+Control@{Client\+Control}!model@{model}}
+\index{model@{model}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \hyperlink{classModel}{Model}$\ast$ Client\+Control\+::model\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classClientControl_adea5f2cf529bedcc7d2aac9e2702d702}\label{classClientControl_adea5f2cf529bedcc7d2aac9e2702d702}} 
+\index{Client\+Control@{Client\+Control}!ui@{ui}}
+\index{ui@{ui}!Client\+Control@{Client\+Control}}
+\subsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Client\+Control$\ast$ Client\+Control\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+views/\hyperlink{clientcontrol_8h}{clientcontrol.\+h}\item 
+views/\hyperlink{clientcontrol_8cpp}{clientcontrol.\+cpp}\end{DoxyCompactItemize}

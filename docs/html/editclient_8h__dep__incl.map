@@ -1,0 +1,7 @@
+<map id="views/editclient.h" name="views/editclient.h">
+<area shape="rect" id="node2" href="$clientcontrol_8cpp.html" title="views/clientcontrol.cpp" alt="" coords="5,80,177,107"/>
+<area shape="rect" id="node3" href="$clientpage_8h.html" title="views/clientpage.h" alt="" coords="202,80,346,107"/>
+<area shape="rect" id="node6" href="$editclient_8cpp.html" title="views/editclient.cpp" alt="" coords="370,80,522,107"/>
+<area shape="rect" id="node4" href="$clientpage_8cpp.html" title="views/clientpage.cpp" alt="" coords="112,155,271,181"/>
+<area shape="rect" id="node5" href="$login_8cpp.html" title="views/login.cpp" alt="" coords="295,155,418,181"/>
+</map>

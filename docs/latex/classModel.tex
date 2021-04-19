@@ -1,0 +1,384 @@
+\hypertarget{classModel}{}\section{Model Class Reference}
+\label{classModel}\index{Model@{Model}}
+
+
+The \hyperlink{classModel}{Model} class.  
+
+
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+
+
+Inheritance diagram for Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classModel__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classModel_af032d8433c87a0a3a431faf6563a1f03}{$\sim$\+Model} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \hyperlink{classModel}{Model} object. \end{DoxyCompactList}\item 
+virtual \hyperlink{classCourse}{Course} $\ast$ \hyperlink{classModel_ab62d035cd5240332e249d39ff9f98f9a}{create\+Course} (string, string, string)=0
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classCourse}{Course} object. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classModel_acc20a58c9a9c7506b06df890e287433e}{remove\+Course} (\hyperlink{classCourse}{Course} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Remove a \hyperlink{classCourse}{Course} object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classModel_aa3ea9c92f586cec1944e3dcdee8c0672}{update\+Course} (\hyperlink{classCourse}{Course} $\ast$, string, string, string)=0
+\begin{DoxyCompactList}\small\item\em Update a \hyperlink{classCourse}{Course} object. \end{DoxyCompactList}\item 
+virtual vector$<$ \hyperlink{classCourse}{Course} $\ast$ $>$ \& \hyperlink{classModel_aded51911782e4fa19a79a423482dc561}{get\+Courses} ()=0
+\begin{DoxyCompactList}\small\item\em Get the Courses object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classModel_a9a4cc2b97cd97bc987f019dca7aa5d9e}{set\+Courses} (const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&)=0
+\begin{DoxyCompactList}\small\item\em Set the Courses object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classModel_aff2385b433de34af14232ec8f7db126e}{add} (\hyperlink{classCourse}{Course} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Adds a course to the model. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classModel_ab6bf3b0428a4b087e8126c4b203bfc45}{add\+User} (\hyperlink{classUser}{User} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Adds a user to the model. \end{DoxyCompactList}\item 
+virtual \hyperlink{classUser}{User} $\ast$ \hyperlink{classModel_a8080158d8cd5ff74bb0daae3824c220b}{create\+User} (string, string, string, string, const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&, int)=0
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classUser}{User} object. \end{DoxyCompactList}\item 
+virtual \hyperlink{classUser}{User} $\ast$ \hyperlink{classModel_a20cb9f90df3f8f235dc14fbc13b64167}{get\+User} () const =0
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classUser}{User} object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classModel_aae120afc85d42a7bedee5405911986a5}{set\+User} (\hyperlink{classUser}{User} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classUser}{User} object. \end{DoxyCompactList}\item 
+virtual vector$<$ \hyperlink{classUser}{User} $\ast$ $>$ \& \hyperlink{classModel_a3e27c021561cb19ce48d4a456e75d5ab}{get\+User\+List} ()=0
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classUser}{User} List object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classModel_affa0ad47e9417b52eca3b73105bad9f0}{set\+User\+List} (const vector$<$ \hyperlink{classUser}{User} $\ast$$>$ \&)=0
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classUser}{User} List object. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classModel_ad217703837ecec908995225f6de1bfca}{remove\+User} (\hyperlink{classUser}{User} $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Remove a \hyperlink{classCourse}{Course} object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classModel_a83ebd4a5678c31c8dd46155d34df961d}{update\+User} (\hyperlink{classUser}{User} $\ast$, string, string, string, string)=0
+\begin{DoxyCompactList}\small\item\em Update a \hyperlink{classCourse}{Course} object. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classModel_a4e75d78a6dc3ded41a44475c3d59aa57}{write\+Course} (const string \&)=0
+\item 
+virtual bool \hyperlink{classModel_a6a0784fa1dd4bffcebda8eb3bf38059e}{read\+Course} (const string \&)=0
+\item 
+virtual bool \hyperlink{classModel_ad2d1b50c1c071ad0b7820cf4343b2463}{write\+User} (const string \&)=0
+\begin{DoxyCompactList}\small\item\em Write a file. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classModel_ad3fa273a7dc1397ce748c657e552d6cc}{read\+User} (const string \&)=0
+\begin{DoxyCompactList}\small\item\em Read a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classModel}{Model} $\ast$ \hyperlink{classModel_accd28300871325fce68d551cebf27220}{create\+Model} ()
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classModel}{Model} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classModel}{Model} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classModel_af032d8433c87a0a3a431faf6563a1f03}\label{classModel_af032d8433c87a0a3a431faf6563a1f03}} 
+\index{Model@{Model}!````~Model@{$\sim$\+Model}}
+\index{````~Model@{$\sim$\+Model}!Model@{Model}}
+\subsubsection{\texorpdfstring{$\sim$\+Model()}{~Model()}}
+{\footnotesize\ttfamily virtual Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the \hyperlink{classModel}{Model} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classModel_aff2385b433de34af14232ec8f7db126e}\label{classModel_aff2385b433de34af14232ec8f7db126e}} 
+\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily virtual void Model\+::add (\begin{DoxyParamCaption}\item[{\hyperlink{classCourse}{Course} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a course to the model. 
+
+
+
+Implemented in \hyperlink{classModelImpl_a1847f819acc9bf909e31ec3438973225}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_ab6bf3b0428a4b087e8126c4b203bfc45}\label{classModel_ab6bf3b0428a4b087e8126c4b203bfc45}} 
+\index{Model@{Model}!add\+User@{add\+User}}
+\index{add\+User@{add\+User}!Model@{Model}}
+\subsubsection{\texorpdfstring{add\+User()}{addUser()}}
+{\footnotesize\ttfamily virtual void Model\+::add\+User (\begin{DoxyParamCaption}\item[{\hyperlink{classUser}{User} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds a user to the model. 
+
+
+
+Implemented in \hyperlink{classModelImpl_aa0c7acd29ab42d13227e0e85fea044c8}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_ab62d035cd5240332e249d39ff9f98f9a}\label{classModel_ab62d035cd5240332e249d39ff9f98f9a}} 
+\index{Model@{Model}!create\+Course@{create\+Course}}
+\index{create\+Course@{create\+Course}!Model@{Model}}
+\subsubsection{\texorpdfstring{create\+Course()}{createCourse()}}
+{\footnotesize\ttfamily virtual \hyperlink{classCourse}{Course}$\ast$ Model\+::create\+Course (\begin{DoxyParamCaption}\item[{string}]{,  }\item[{string}]{,  }\item[{string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a \hyperlink{classCourse}{Course} object. 
+
+\begin{DoxyReturn}{Returns}
+Course$\ast$ \hyperlink{classCourse}{Course} set. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classModelImpl_a9bcdb7f3c69ac4f86f253a9422ae6ce9}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_accd28300871325fce68d551cebf27220}\label{classModel_accd28300871325fce68d551cebf27220}} 
+\index{Model@{Model}!create\+Model@{create\+Model}}
+\index{create\+Model@{create\+Model}!Model@{Model}}
+\subsubsection{\texorpdfstring{create\+Model()}{createModel()}}
+{\footnotesize\ttfamily \hyperlink{classModel}{Model} $\ast$ Model\+::create\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a \hyperlink{classModel}{Model} object. 
+
+\begin{DoxyReturn}{Returns}
+Model$\ast$ \hyperlink{classModel}{Model} set. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classModel_a8080158d8cd5ff74bb0daae3824c220b}\label{classModel_a8080158d8cd5ff74bb0daae3824c220b}} 
+\index{Model@{Model}!create\+User@{create\+User}}
+\index{create\+User@{create\+User}!Model@{Model}}
+\subsubsection{\texorpdfstring{create\+User()}{createUser()}}
+{\footnotesize\ttfamily virtual \hyperlink{classUser}{User}$\ast$ Model\+::create\+User (\begin{DoxyParamCaption}\item[{string}]{,  }\item[{string}]{,  }\item[{string}]{,  }\item[{string}]{,  }\item[{const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a \hyperlink{classUser}{User} object. 
+
+\begin{DoxyReturn}{Returns}
+User$\ast$ \hyperlink{classUser}{User} set 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classModelImpl_affad955ee2bdbfc58ac049632cd9668b}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_aded51911782e4fa19a79a423482dc561}\label{classModel_aded51911782e4fa19a79a423482dc561}} 
+\index{Model@{Model}!get\+Courses@{get\+Courses}}
+\index{get\+Courses@{get\+Courses}!Model@{Model}}
+\subsubsection{\texorpdfstring{get\+Courses()}{getCourses()}}
+{\footnotesize\ttfamily virtual vector$<$\hyperlink{classCourse}{Course}$\ast$$>$\& Model\+::get\+Courses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Courses object. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+Course$\ast$$>$\& Courses set 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classModelImpl_afc84ed40271afee13778f4e9f9f90e2e}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_a20cb9f90df3f8f235dc14fbc13b64167}\label{classModel_a20cb9f90df3f8f235dc14fbc13b64167}} 
+\index{Model@{Model}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!Model@{Model}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily virtual \hyperlink{classUser}{User}$\ast$ Model\+::get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the \hyperlink{classUser}{User} object. 
+
+\begin{DoxyReturn}{Returns}
+User$\ast$ \hyperlink{classUser}{User} set 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classModelImpl_ac098ad97916ff988d518ded5056dabb0}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_a3e27c021561cb19ce48d4a456e75d5ab}\label{classModel_a3e27c021561cb19ce48d4a456e75d5ab}} 
+\index{Model@{Model}!get\+User\+List@{get\+User\+List}}
+\index{get\+User\+List@{get\+User\+List}!Model@{Model}}
+\subsubsection{\texorpdfstring{get\+User\+List()}{getUserList()}}
+{\footnotesize\ttfamily virtual vector$<$\hyperlink{classUser}{User}$\ast$$>$\& Model\+::get\+User\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the \hyperlink{classUser}{User} List object. 
+
+\begin{DoxyReturn}{Returns}
+vector$<$\+User$\ast$$>$\& Users set 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classModelImpl_a46f441c1ba57cc395e6732cab80e78fd}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_a6a0784fa1dd4bffcebda8eb3bf38059e}\label{classModel_a6a0784fa1dd4bffcebda8eb3bf38059e}} 
+\index{Model@{Model}!read\+Course@{read\+Course}}
+\index{read\+Course@{read\+Course}!Model@{Model}}
+\subsubsection{\texorpdfstring{read\+Course()}{readCourse()}}
+{\footnotesize\ttfamily virtual bool Model\+::read\+Course (\begin{DoxyParamCaption}\item[{const string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classModelImpl_aba86d399703fe35c086d6ff5647e48da}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_ad3fa273a7dc1397ce748c657e552d6cc}\label{classModel_ad3fa273a7dc1397ce748c657e552d6cc}} 
+\index{Model@{Model}!read\+User@{read\+User}}
+\index{read\+User@{read\+User}!Model@{Model}}
+\subsubsection{\texorpdfstring{read\+User()}{readUser()}}
+{\footnotesize\ttfamily virtual bool Model\+::read\+User (\begin{DoxyParamCaption}\item[{const string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Read a file. 
+
+\begin{DoxyReturn}{Returns}
+true if it was successful 
+
+false if it failed 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classModelImpl_a132c46a2d6ca86c7374a065b3079fe15}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_acc20a58c9a9c7506b06df890e287433e}\label{classModel_acc20a58c9a9c7506b06df890e287433e}} 
+\index{Model@{Model}!remove\+Course@{remove\+Course}}
+\index{remove\+Course@{remove\+Course}!Model@{Model}}
+\subsubsection{\texorpdfstring{remove\+Course()}{removeCourse()}}
+{\footnotesize\ttfamily virtual bool Model\+::remove\+Course (\begin{DoxyParamCaption}\item[{\hyperlink{classCourse}{Course} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove a \hyperlink{classCourse}{Course} object. 
+
+\begin{DoxyReturn}{Returns}
+true if it was successful 
+
+false if it failed 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classModelImpl_ae46076a7e4b54d24ba15fb2eb8e7f33d}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_ad217703837ecec908995225f6de1bfca}\label{classModel_ad217703837ecec908995225f6de1bfca}} 
+\index{Model@{Model}!remove\+User@{remove\+User}}
+\index{remove\+User@{remove\+User}!Model@{Model}}
+\subsubsection{\texorpdfstring{remove\+User()}{removeUser()}}
+{\footnotesize\ttfamily virtual bool Model\+::remove\+User (\begin{DoxyParamCaption}\item[{\hyperlink{classUser}{User} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove a \hyperlink{classCourse}{Course} object. 
+
+\begin{DoxyReturn}{Returns}
+true if it was successful 
+
+false if it failed 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classModelImpl_a51130aa538cd27b1cac6919cbbef05ee}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_a9a4cc2b97cd97bc987f019dca7aa5d9e}\label{classModel_a9a4cc2b97cd97bc987f019dca7aa5d9e}} 
+\index{Model@{Model}!set\+Courses@{set\+Courses}}
+\index{set\+Courses@{set\+Courses}!Model@{Model}}
+\subsubsection{\texorpdfstring{set\+Courses()}{setCourses()}}
+{\footnotesize\ttfamily virtual void Model\+::set\+Courses (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{classCourse}{Course} $\ast$$>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Courses object. 
+
+
+
+Implemented in \hyperlink{classModelImpl_ae90d5e4e7ec786f3752a6551dab39d66}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_aae120afc85d42a7bedee5405911986a5}\label{classModel_aae120afc85d42a7bedee5405911986a5}} 
+\index{Model@{Model}!set\+User@{set\+User}}
+\index{set\+User@{set\+User}!Model@{Model}}
+\subsubsection{\texorpdfstring{set\+User()}{setUser()}}
+{\footnotesize\ttfamily virtual void Model\+::set\+User (\begin{DoxyParamCaption}\item[{\hyperlink{classUser}{User} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the \hyperlink{classUser}{User} object. 
+
+
+
+Implemented in \hyperlink{classModelImpl_a9e1a1953a4d3355e147515c2a0b3c031}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_affa0ad47e9417b52eca3b73105bad9f0}\label{classModel_affa0ad47e9417b52eca3b73105bad9f0}} 
+\index{Model@{Model}!set\+User\+List@{set\+User\+List}}
+\index{set\+User\+List@{set\+User\+List}!Model@{Model}}
+\subsubsection{\texorpdfstring{set\+User\+List()}{setUserList()}}
+{\footnotesize\ttfamily virtual void Model\+::set\+User\+List (\begin{DoxyParamCaption}\item[{const vector$<$ \hyperlink{classUser}{User} $\ast$$>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the \hyperlink{classUser}{User} List object. 
+
+
+
+Implemented in \hyperlink{classModelImpl_a617c58790e2b2207a3ce7e860a56e3a1}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_aa3ea9c92f586cec1944e3dcdee8c0672}\label{classModel_aa3ea9c92f586cec1944e3dcdee8c0672}} 
+\index{Model@{Model}!update\+Course@{update\+Course}}
+\index{update\+Course@{update\+Course}!Model@{Model}}
+\subsubsection{\texorpdfstring{update\+Course()}{updateCourse()}}
+{\footnotesize\ttfamily virtual void Model\+::update\+Course (\begin{DoxyParamCaption}\item[{\hyperlink{classCourse}{Course} $\ast$}]{,  }\item[{string}]{,  }\item[{string}]{,  }\item[{string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update a \hyperlink{classCourse}{Course} object. 
+
+
+
+Implemented in \hyperlink{classModelImpl_aec25920972acddf92114b2b3581b9d66}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_a83ebd4a5678c31c8dd46155d34df961d}\label{classModel_a83ebd4a5678c31c8dd46155d34df961d}} 
+\index{Model@{Model}!update\+User@{update\+User}}
+\index{update\+User@{update\+User}!Model@{Model}}
+\subsubsection{\texorpdfstring{update\+User()}{updateUser()}}
+{\footnotesize\ttfamily virtual void Model\+::update\+User (\begin{DoxyParamCaption}\item[{\hyperlink{classUser}{User} $\ast$}]{,  }\item[{string}]{,  }\item[{string}]{,  }\item[{string}]{,  }\item[{string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update a \hyperlink{classCourse}{Course} object. 
+
+
+
+Implemented in \hyperlink{classModelImpl_a8088106fd8837da688f9334ab143db4c}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_a4e75d78a6dc3ded41a44475c3d59aa57}\label{classModel_a4e75d78a6dc3ded41a44475c3d59aa57}} 
+\index{Model@{Model}!write\+Course@{write\+Course}}
+\index{write\+Course@{write\+Course}!Model@{Model}}
+\subsubsection{\texorpdfstring{write\+Course()}{writeCourse()}}
+{\footnotesize\ttfamily virtual bool Model\+::write\+Course (\begin{DoxyParamCaption}\item[{const string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classModelImpl_a6ce3d79c0b49abe19c034dfb30d023d7}{Model\+Impl}.
+
+\mbox{\Hypertarget{classModel_ad2d1b50c1c071ad0b7820cf4343b2463}\label{classModel_ad2d1b50c1c071ad0b7820cf4343b2463}} 
+\index{Model@{Model}!write\+User@{write\+User}}
+\index{write\+User@{write\+User}!Model@{Model}}
+\subsubsection{\texorpdfstring{write\+User()}{writeUser()}}
+{\footnotesize\ttfamily virtual bool Model\+::write\+User (\begin{DoxyParamCaption}\item[{const string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Write a file. 
+
+\begin{DoxyReturn}{Returns}
+true if it was successful 
+
+false if it failed 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classModelImpl_a42b5948a513af3e20645cdb63fb6be76}{Model\+Impl}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/\hyperlink{model_8h}{model.\+h}\item 
+src/lib/\hyperlink{model__impl_8cpp}{model\+\_\+impl.\+cpp}\end{DoxyCompactItemize}
