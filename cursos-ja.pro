@@ -33,7 +33,7 @@ HEADERS += \
     src/lib/model.h \
     src/lib/model_impl.h \
     src/lib/register.h \
-    src/lib/register.impl.h \
+    src/lib/register_impl.h \
     tests/functional/functional_tests.h \
     tests/unit/unit_course.h \
     tests/unit/unit_user.h \

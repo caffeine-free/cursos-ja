@@ -2,7 +2,6 @@
 #define REGISTER_IMPL_H
 
 #include "register.h"
-#include <algorithm>
 #include <regex>
 
 using std::regex;

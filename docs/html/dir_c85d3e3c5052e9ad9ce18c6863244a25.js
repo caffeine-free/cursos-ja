@@ -10,8 +10,8 @@ var dir_c85d3e3c5052e9ad9ce18c6863244a25 =
     [ "register.h", "register_8h.html", [
       [ "Register", "classRegister.html", "classRegister" ]
     ] ],
-    [ "register.impl.h", "register_8impl_8h.html", [
+    [ "register_impl.cpp", "register__impl_8cpp.html", null ],
+    [ "register_impl.h", "register__impl_8h.html", [
       [ "RegisterImpl", "classRegisterImpl.html", "classRegisterImpl" ]
-    ] ],
-    [ "register_impl.cpp", "register__impl_8cpp.html", null ]
+    ] ]
 ];

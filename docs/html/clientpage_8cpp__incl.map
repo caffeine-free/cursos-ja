@@ -1,14 +1,14 @@
 <map id="views/clientpage.cpp" name="views/clientpage.cpp">
-<area shape="rect" id="node2" href="$clientpage_8h.html" title="clientpage.h" alt="" coords="146,155,249,181"/>
-<area shape="rect" id="node10" href="$course__impl_8h.html" title="../src/classes/course\l_impl.h" alt="" coords="987,408,1139,449"/>
-<area shape="rect" id="node15" href="$user__impl_8h.html" title="../src/classes/user\l_impl.h" alt="" coords="902,229,1039,271"/>
-<area shape="rect" id="node17" href="$login_8h.html" title="../views/login.h" alt="" coords="676,80,796,107"/>
-<area shape="rect" id="node6" href="$editclient_8h.html" title="editclient.h" alt="" coords="126,237,221,263"/>
-<area shape="rect" id="node11" href="$course_8h.html" title="course.h" alt="" coords="819,497,896,524"/>
-<area shape="rect" id="node16" href="$user_8h.html" title="user.h" alt="" coords="860,415,921,442"/>
-<area shape="rect" id="node21" href="$login__admpage_8h.html" title="login_admpage.h" alt="" coords="381,155,515,181"/>
-<area shape="rect" id="node23" href="$registerview_8h.html" title="registerview.h" alt="" coords="540,155,655,181"/>
-<area shape="rect" id="node22" href="$clientcontrol_8h.html" title="clientcontrol.h" alt="" coords="397,237,512,263"/>
-<area shape="rect" id="node24" href="$register_8h.html" title="src/lib/register.h" alt="" coords="739,237,866,263"/>
-<area shape="rect" id="node25" href="$model_8h.html" title="model.h" alt="" coords="785,326,860,353"/>
+<area shape="rect" id="node2" href="$clientpage_8h.html" title="clientpage.h" alt="" coords="53,169,156,196"/>
+<area shape="rect" id="node10" href="$course__impl_8h.html" title="../src/classes/course\l_impl.h" alt="" coords="701,408,853,449"/>
+<area shape="rect" id="node15" href="$user__impl_8h.html" title="../src/classes/user\l_impl.h" alt="" coords="5,80,143,121"/>
+<area shape="rect" id="node17" href="$login_8h.html" title="../views/login.h" alt="" coords="390,87,510,114"/>
+<area shape="rect" id="node4" href="$editclient_8h.html" title="editclient.h" alt="" coords="331,244,425,271"/>
+<area shape="rect" id="node11" href="$course_8h.html" title="course.h" alt="" coords="497,497,574,524"/>
+<area shape="rect" id="node16" href="$user_8h.html" title="user.h" alt="" coords="505,415,566,442"/>
+<area shape="rect" id="node21" href="$login__admpage_8h.html" title="login_admpage.h" alt="" coords="383,169,517,196"/>
+<area shape="rect" id="node23" href="$registerview_8h.html" title="registerview.h" alt="" coords="681,169,795,196"/>
+<area shape="rect" id="node22" href="$clientcontrol_8h.html" title="clientcontrol.h" alt="" coords="450,244,565,271"/>
+<area shape="rect" id="node24" href="$register_8h.html" title="src/lib/register.h" alt="" coords="629,244,756,271"/>
+<area shape="rect" id="node25" href="$model_8h.html" title="model.h" alt="" coords="707,326,782,353"/>
 </map>
