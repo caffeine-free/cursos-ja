@@ -40,8 +40,11 @@
       </item>
       <item>
        <widget class="QLabel" name="txt_id_client">
+        <property name="styleSheet">
+         <string notr="true">font-weight: bold; font-size: 18px</string>
+        </property>
         <property name="text">
-         <string>EDITAR INFORMAÇÕES PESSOAIS</string>
+         <string>EDITAR INFORMAÇÕES DO USUÁRIO</string>
         </property>
        </widget>
       </item>
@@ -157,7 +160,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
  </widget>

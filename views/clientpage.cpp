@@ -47,8 +47,6 @@ void clientPage::on_edit_profile_btn_clicked()
     ec->setModel(model);
     ec->setUser(model->getUser());
     ec->exec();
-
-
 }
 
 void clientPage::load_all_courses(const vector<Course*>& courses){
@@ -118,11 +116,10 @@ void clientPage::setTableData(){
     ui->table_client_courses->verticalHeader()->hide();
     ui->table_client_courses->horizontalHeader()->hide();
     ui->table_client_courses->setShowGrid(false);
-    ui->table_client_courses->setColumnWidth(0, 430);
+    ui->table_client_courses->setColumnWidth(0, 950);
     ui->table_client_courses->setColumnWidth(1, 50);
     ui->table_client_courses->setSelectionBehavior(QAbstractItemView::SelectRows);
 
-    ui->table_client_courses->setSortingEnabled(false);
     ui->table_client_courses->setSortingEnabled(false);
 
     load_client_courses(this->model->getUser()->getCourses());
@@ -133,13 +130,12 @@ void clientPage::setTableData(){
     ui->table_all_courses->verticalHeader()->hide();
     ui->table_all_courses->horizontalHeader()->hide();
     ui->table_all_courses->setShowGrid(false);
-    ui->table_all_courses->setColumnWidth(0, 230);
-    ui->table_all_courses->setColumnWidth(1, 300);
-    ui->table_all_courses->setColumnWidth(2, 30);
+    ui->table_all_courses->setColumnWidth(0, 400);
+    ui->table_all_courses->setColumnWidth(1, 430);
+    ui->table_all_courses->setColumnWidth(2, 140);
     ui->table_all_courses->setColumnWidth(3, 70);
     ui->table_all_courses->setSelectionBehavior(QAbstractItemView::SelectRows);
 
-    ui->table_all_courses->setSortingEnabled(false);
     ui->table_all_courses->setSortingEnabled(false);
 
     load_all_courses(model->getCourses());
@@ -148,7 +144,6 @@ void clientPage::setTableData(){
 
 void clientPage::buy_button_pressed(){
     QPushButton* buttonSender = qobject_cast<QPushButton*>(sender());
-    //int row = ui->table_all_courses->indexAt(buttonSender->pos()).row();
     int row=ui->table_all_courses->currentRow();
 
     Course* c = new CourseImpl(
