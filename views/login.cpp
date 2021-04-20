@@ -71,15 +71,17 @@ void login::on_pushButton_clicked()
 
     model->setUser(user);
 
+    this->close();
+
     clientPage* cp = new clientPage();
     cp->setModel(model);
     cp->exec();
-    this->close();
 }
 
 void login::on_btn_newClient_clicked()
-{   /*reg->exec();
-    this->close();*/
+{
+    this->close();
+
     registerview* rv = new registerview();
     rv->setModel(model);
     rv->exec();
@@ -87,6 +89,8 @@ void login::on_btn_newClient_clicked()
 
 void login::on_btn_admPage_clicked()
 {
+    this->close();
+
     login_admpage* l_adm = new login_admpage();
     l_adm->setModel(model);
     l_adm->exec();

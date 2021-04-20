@@ -60,12 +60,10 @@ void login_admpage::on_pushButton_clicked(){
             tr("LoginAdm"),
             tr("Senha incorreta")
         );
-
         return;
     }
 
-
-
+    this->close();
 
     ClientControl* cc = new ClientControl();
     cc->setModel(model);

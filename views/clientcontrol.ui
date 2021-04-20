@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>909</width>
+    <width>973</width>
     <height>577</height>
    </rect>
   </property>
@@ -18,12 +18,12 @@
     <rect>
      <x>20</x>
      <y>80</y>
-     <width>851</width>
+     <width>931</width>
      <height>461</height>
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>3</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -32,8 +32,8 @@
     <widget class="QLabel" name="description_test">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>80</y>
+       <x>350</x>
+       <y>100</y>
        <width>291</width>
        <height>237</height>
       </rect>
@@ -133,8 +133,8 @@
     <widget class="QPushButton" name="cancel_client_btn">
      <property name="geometry">
       <rect>
-       <x>290</x>
-       <y>310</y>
+       <x>360</x>
+       <y>330</y>
        <width>269</width>
        <height>28</height>
       </rect>
@@ -148,44 +148,21 @@
     <attribute name="title">
      <string>Gestão de Usuários</string>
     </attribute>
-    <widget class="QPushButton" name="pushButton_5">
-     <property name="geometry">
-      <rect>
-       <x>738</x>
-       <y>110</y>
-       <width>81</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>FILTRAR</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>110</y>
-       <width>723</width>
-       <height>25</height>
-      </rect>
-     </property>
-    </widget>
     <widget class="QTableWidget" name="table_adm_user">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>140</y>
-       <width>811</width>
-       <height>231</height>
+       <width>901</width>
+       <height>281</height>
       </rect>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
      <property name="geometry">
       <rect>
-       <x>290</x>
-       <y>50</y>
+       <x>370</x>
+       <y>60</y>
        <width>212</width>
        <height>23</height>
       </rect>
@@ -202,11 +179,22 @@
       <rect>
        <x>10</x>
        <y>110</y>
-       <width>811</width>
-       <height>27</height>
+       <width>901</width>
+       <height>30</height>
       </rect>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="lineEdit_2"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="text">
+         <string>FILTRAR</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QWidget" name="tab">
@@ -216,8 +204,8 @@
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>300</x>
-       <y>150</y>
+       <x>350</x>
+       <y>130</y>
        <width>261</width>
        <height>185</height>
       </rect>
@@ -291,7 +279,7 @@
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>360</x>
        <y>50</y>
        <width>212</width>
        <height>23</height>
@@ -309,8 +297,8 @@
       <rect>
        <x>20</x>
        <y>110</y>
-       <width>791</width>
-       <height>281</height>
+       <width>881</width>
+       <height>301</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -338,8 +326,8 @@
   <widget class="QPushButton" name="exit_adm_btn">
    <property name="geometry">
     <rect>
-     <x>720</x>
-     <y>10</y>
+     <x>790</x>
+     <y>20</y>
      <width>151</width>
      <height>25</height>
     </rect>

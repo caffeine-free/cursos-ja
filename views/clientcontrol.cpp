@@ -69,7 +69,6 @@ void ClientControl::load_course_data(){
 
 void ClientControl::edit_course_button_pressed(){
     QPushButton* buttonSender = qobject_cast<QPushButton*>(sender());
-    //int row = ui->table_adm_courses->indexAt(buttonSender->pos()).row();
     int row=ui->table_adm_courses->currentRow();
 
     EditCourse* ec = new EditCourse();
@@ -82,7 +81,6 @@ void ClientControl::edit_course_button_pressed(){
 
 void ClientControl::edit_user_pressed(){
     QPushButton* buttonSender = qobject_cast<QPushButton*>(sender());
-    //int row = ui->table_adm_courses->indexAt(buttonSender->pos()).row();
     int row=ui->table_adm_user->currentRow();
 
     editclient* ec = new editclient();
@@ -95,9 +93,7 @@ void ClientControl::edit_user_pressed(){
 
 void ClientControl::remove_course_button_pressed(){
     QPushButton* buttonSender = qobject_cast<QPushButton*>(sender());
-    //int row = ui->table_adm_courses->indexAt(buttonSender->pos()).row();
     int row=ui->table_adm_courses->currentRow();
-
 
     model->removeCourse(model->getCourses()[row]);
     ui->table_adm_courses->removeRow(row);
@@ -111,7 +107,7 @@ void ClientControl::remove_course_button_pressed(){
 
 void ClientControl::remove_user_pressed(){
     QPushButton* buttonSender = qobject_cast<QPushButton*>(sender());
-    //int row = ui->table_adm_courses->indexAt(buttonSender->pos()).row();
+
     int row=ui->table_adm_user->currentRow();
     model->removeUser(model->getUserList()[row]);
     ui->table_adm_user->removeRow(row);
@@ -173,8 +169,8 @@ void ClientControl::setTableData(){
     ui->table_adm_courses->verticalHeader()->hide();
     ui->table_adm_courses->horizontalHeader()->hide();
     ui->table_adm_courses->setShowGrid(false);
-    ui->table_adm_courses->setColumnWidth(0, 230);
-    ui->table_adm_courses->setColumnWidth(1, 50);
+    ui->table_adm_courses->setColumnWidth(0, 330);
+    ui->table_adm_courses->setColumnWidth(1, 100);
     ui->table_adm_courses->setSortingEnabled(false);
 
     load_course_data();
@@ -185,9 +181,9 @@ void ClientControl::setTableData(){
     ui->table_adm_user->verticalHeader()->hide();
     ui->table_adm_user->horizontalHeader()->hide();
     ui->table_adm_user->setShowGrid(false);
-    ui->table_adm_user->setColumnWidth(0, 230);
+    ui->table_adm_user->setColumnWidth(0, 160);
     ui->table_adm_user->setColumnWidth(1, 230);
-    ui->table_adm_user->setColumnWidth(2, 50);
+    ui->table_adm_user->setColumnWidth(2, 100);
     ui->table_adm_user->setSortingEnabled(false);
 
     load_user_data();
